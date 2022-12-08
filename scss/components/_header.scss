@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding: 25px;
+  padding: 30px;
 
   &__wrapper {
     justify-content: space-between;
+    height: 43px;
 
     .tribetech__logo {
       width: 118px;
@@ -28,7 +29,7 @@
         margin-left: auto;
         justify-content: start;
 
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
           display: none;
         }
       }

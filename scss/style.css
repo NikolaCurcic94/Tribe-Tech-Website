@@ -233,6 +233,25 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .nav__button {
+    display: none;
+  }
+}
+
+.menu__button {
+  display: none;
+  width: 39px;
+  height: 19px;
+  filter: invert(99%) sepia(2%) saturate(547%) hue-rotate(188deg) brightness(116%) contrast(100%);
+}
+
+@media (max-width: 768px) {
+  .menu__button {
+    display: block;
+  }
+}
+
 .call__us__button {
   padding: 5px;
   border-radius: 5px;
@@ -250,11 +269,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding: 25px;
+  padding: 30px;
 }
 
 .header__wrapper {
   justify-content: space-between;
+  height: 43px;
 }
 
 .header__wrapper .tribetech__logo {
@@ -279,7 +299,7 @@ body {
   justify-content: start;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .header__wrapper .header__nav .nav__links {
     display: none;
   }
