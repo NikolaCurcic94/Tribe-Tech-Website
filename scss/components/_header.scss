@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 25px;
+
+  &__wrapper {
+    justify-content: space-between;
+
+    .tribetech__logo {
+      width: 118px;
+      height: 25px;
+
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .header__nav {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+
+      .nav__links {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        justify-content: start;
+
+        @media (max-width: 375px) {
+          display: none;
+        }
+      }
+
+      li {
+        margin: 0 30px;
+      }
+    }
+  }
+}

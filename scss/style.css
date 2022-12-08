@@ -1,0 +1,540 @@
+/**********************************RESTART*******************************/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+main {
+  display: block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+::-moz-selection,
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 0;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q::before,
+q::after {
+  content: "";
+}
+
+small {
+  font-size: 85%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+nav ul,
+nav ol,
+ul,
+li {
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+i {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/**********************************Global Configuration********************************/
+@font-face {
+  font-family: "Sailec";
+  src: url("../fonts/Sailec Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../fonts/Sailec Bold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: "Sailec";
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.35;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: #000066;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cc6633;
+  color: #000066;
+  border: none;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.call__us__button {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+  color: #000066;
+  border: none;
+  font-weight: 700;
+  position: relative;
+  background-color: #5fcc47;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 25px;
+}
+
+.header__wrapper {
+  justify-content: space-between;
+}
+
+.header__wrapper .tribetech__logo {
+  width: 118px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header__wrapper .header__nav {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper .header__nav .nav__links {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  justify-content: start;
+}
+
+@media (max-width: 375px) {
+  .header__wrapper .header__nav .nav__links {
+    display: none;
+  }
+}
+
+.header__wrapper .header__nav li {
+  margin: 0 30px;
+}
+
+/**********************************Hero Section*******************************/
+.hero__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__section h1 {
+  font-size: 50px;
+}
+
+.hero__section p {
+  font-size: 30px;
+}
+
+/**********************************Problem Section*******************************/
+.problem__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.problem__section h1 {
+  font-size: 50px;
+}
+
+.problem__section p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+/**********************************Solution section*******************************/
+.solution__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.solution__section h1 {
+  font-size: 50px;
+}
+
+.solution__section p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+/**********************************If u are section*******************************/
+.if__you__are {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.if__you__are h3 {
+  font-size: 40px;
+}
+
+.if__you__are li {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.if__you__are p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+/**********************************Working process section*******************************/
+.workin__process__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.workin__process__section h2 {
+  font-size: 50px;
+}
+
+.workin__process__section p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+/**********************************Mission and purpose section*******************************/
+.mission__and__purpose {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission__and__purpose h2 {
+  font-size: 50px;
+}
+
+.mission__and__purpose p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+/**********************************Stay in touch section*******************************/
+.stay__in__touch__section {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stay__in__touch__section form {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  border-radius: 15px;
+  max-width: 1000px;
+}
+
+@media (max-width: 930px) {
+  .stay__in__touch__section form {
+    padding: 20px;
+    gap: 10px;
+  }
+}
+
+.stay__in__touch__section form .lets__talk__paragraph {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000066;
+}
+
+.stay__in__touch__section form .message {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 50px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .stay__in__touch__section form .message {
+    gap: 10px;
+  }
+}
+
+.stay__in__touch__section form .message .message__label {
+  padding-bottom: 20px;
+  color: #000066;
+}
+
+.stay__in__touch__section form .message .message__input {
+  padding: 10px;
+  color: #666699;
+  font-weight: 700;
+  border: none;
+  background-color: #e6e6e6;
+  width: 100%;
+  font-size: 15px;
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .stay__in__touch__section form .message .message__input {
+    padding-bottom: 40px;
+  }
+}
+
+.stay__in__touch__section form h2 {
+  color: #000066;
+  font-size: 30px;
+}
+
+.stay__in__touch__section form .name__and__last__name,
+.stay__in__touch__section form .email__and__phone__number,
+.stay__in__touch__section form .call__us {
+  display: flex;
+  border: none;
+  gap: 50px;
+  width: 100%;
+}
+
+@media (max-width: 930px) {
+  .stay__in__touch__section form .name__and__last__name,
+  .stay__in__touch__section form .email__and__phone__number,
+  .stay__in__touch__section form .call__us {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.stay__in__touch__section form .form__div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.stay__in__touch__section form label {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.stay__in__touch__section form input {
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  width: 100%;
+  background-color: #e6e6e6;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000066;
+}
+
+.stay__in__touch__section form ::-webkit-input-placeholder {
+  color: #666699;
+}
+
+.stay__in__touch__section form .input__class:focus {
+  box-shadow: 0 0 3pt 2pt #000066;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  transition: 0.1s;
+}
+/*# sourceMappingURL=style.css.map */

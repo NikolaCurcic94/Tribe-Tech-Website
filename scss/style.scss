@@ -1,0 +1,248 @@
+@import "./config";
+@import "./utilities";
+@import "./buttons";
+// @import "slide";
+@import "./components/header";
+@import "./components/footer";
+
+/**********************************Hero Section*******************************/
+
+.hero__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+/**********************************Problem Section*******************************/
+.problem__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+  }
+}
+/**********************************Solution section*******************************/
+.solution__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/**********************************If u are section*******************************/
+
+.if__you__are {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 40px;
+  }
+
+  li {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/**********************************Working process section*******************************/
+
+.workin__process__section {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/**********************************Mission and purpose section*******************************/
+
+.mission__and__purpose {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/**********************************Stay in touch section*******************************/
+
+.stay__in__touch__section {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    border-radius: 15px;
+    max-width: 1000px;
+
+    @media (max-width: 930px) {
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .lets__talk__paragraph {
+      font-size: 40px;
+      font-weight: 900;
+      color: $primary-color;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      gap: 50px;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        gap: 10px;
+      }
+
+      .message__label {
+        padding-bottom: 20px;
+        color: $primary-color;
+      }
+
+      .message__input {
+        padding: 10px;
+        color: #666699;
+        font-weight: 700;
+        border: none;
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        font-size: 15px;
+        max-width: 900px;
+
+        @media (max-width: 768px) {
+          padding-bottom: 40px;
+        }
+      }
+    }
+
+    h2 {
+      color: $primary-color;
+      font-size: 30px;
+    }
+
+    .name__and__last__name,
+    .email__and__phone__number,
+    .call__us {
+      display: flex;
+      border: none;
+      gap: 50px;
+      width: 100%;
+
+      @media (max-width: 930px) {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+
+    .form__div {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+    }
+
+    label {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    input {
+      border: none;
+      padding: 10px;
+      border-radius: 2px;
+      width: 100%;
+      background-color: rgb(230, 230, 230);
+      font-size: 15px;
+      font-weight: 700;
+      color: $primary-color;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #666699;
+    }
+
+    .input__class:focus {
+      box-shadow: 0 0 3pt 2pt $primary-color;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      transition: 0.1s;
+    }
+  }
+}
