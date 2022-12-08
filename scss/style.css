@@ -229,6 +229,13 @@ body {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .button {
+    font-size: 15px;
+    width: 140px;
+  }
+}
+
 .button:hover {
   cursor: pointer;
 }
@@ -263,6 +270,13 @@ body {
   background-color: #5fcc47;
   font-size: 30px;
   font-weight: 900;
+}
+
+@media (max-width: 480px) {
+  .call__us__button {
+    font-size: 15px;
+    width: 120px;
+  }
 }
 
 .header {
@@ -319,12 +333,30 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .hero__section {
+    padding: 70px 30px;
+  }
+}
+
 .hero__section h1 {
   font-size: 50px;
 }
 
+@media (max-width: 768px) {
+  .hero__section h1 {
+    font-size: 35px;
+  }
+}
+
 .hero__section p {
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero__section p {
+    font-size: 20px;
+  }
 }
 
 /**********************************Problem Section*******************************/
@@ -337,14 +369,33 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .problem__section {
+    padding: 70px 30px;
+  }
+}
+
 .problem__section h1 {
   font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .problem__section h1 {
+    font-size: 35px;
+  }
 }
 
 .problem__section p {
   font-size: 20px;
   width: 70%;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .problem__section p {
+    font-size: 20px;
+    width: 90%;
+  }
 }
 
 /**********************************Solution section*******************************/
@@ -357,14 +408,40 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .solution__section {
+    padding: 70px 30px;
+  }
+}
+
 .solution__section h1 {
   font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .solution__section h1 {
+    font-size: 35px;
+  }
 }
 
 .solution__section p {
   font-size: 20px;
   width: 70%;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .solution__section p {
+    font-size: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution__section p {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 /**********************************If u are section*******************************/
@@ -377,13 +454,31 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .if__you__are {
+    padding: 70px 30px;
+  }
+}
+
 .if__you__are h3 {
   font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .if__you__are h3 {
+    font-size: 25px;
+  }
 }
 
 .if__you__are li {
   font-size: 20px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .if__you__are li {
+    font-size: 15px;
+  }
 }
 
 .if__you__are p {
@@ -402,14 +497,33 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .workin__process__section {
+    padding: 70px 30px;
+  }
+}
+
 .workin__process__section h2 {
   font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .workin__process__section h2 {
+    font-size: 25px;
+  }
 }
 
 .workin__process__section p {
   font-size: 20px;
   width: 70%;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .workin__process__section p {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 /**********************************Mission and purpose section*******************************/
@@ -422,14 +536,33 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .mission__and__purpose {
+    padding: 70px 30px;
+  }
+}
+
 .mission__and__purpose h2 {
   font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .mission__and__purpose h2 {
+    font-size: 25px;
+  }
 }
 
 .mission__and__purpose p {
   font-size: 20px;
   width: 70%;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .mission__and__purpose p {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 /**********************************Stay in touch section*******************************/
@@ -444,7 +577,7 @@ body {
   background-color: white;
   padding: 50px;
   display: flex;
-  flex-basis: 70%;
+  width: 70%;
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
@@ -452,10 +585,11 @@ body {
   max-width: 1000px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 768px) {
   .stay__in__touch__section form {
     padding: 20px;
     gap: 10px;
+    width: 90%;
   }
 }
 
@@ -463,6 +597,12 @@ body {
   font-size: 40px;
   font-weight: 900;
   color: #000066;
+}
+
+@media (max-width: 480px) {
+  .stay__in__touch__section form .lets__talk__paragraph {
+    font-size: 30px;
+  }
 }
 
 .stay__in__touch__section form .message {
@@ -507,6 +647,12 @@ body {
   font-size: 30px;
 }
 
+@media (max-width: 480px) {
+  .stay__in__touch__section form h2 {
+    font-size: 20px;
+  }
+}
+
 .stay__in__touch__section form .name__and__last__name,
 .stay__in__touch__section form .email__and__phone__number,
 .stay__in__touch__section form .call__us {
@@ -536,6 +682,12 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 480px) {
+  .stay__in__touch__section form label {
+    font-size: 20px;
+  }
+}
+
 .stay__in__touch__section form input {
   border: none;
   padding: 10px;
@@ -551,11 +703,23 @@ body {
   color: #666699;
 }
 
+@media (max-width: 480px) {
+  .stay__in__touch__section form ::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+}
+
 .stay__in__touch__section form .input__class:focus {
   box-shadow: 0 0 3pt 2pt #000066;
   border: none;
   border-radius: 2px;
   outline: none;
   transition: 0.1s;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
