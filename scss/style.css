@@ -246,6 +246,25 @@ body {
   font-weight: 900;
 }
 
+body {
+  background-color: #000066;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank__you__modal {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.thank__you__modal h1,
+.thank__you__modal p {
+  color: #000066;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
