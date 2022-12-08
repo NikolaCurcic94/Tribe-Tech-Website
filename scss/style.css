@@ -219,14 +219,18 @@ body {
 }
 
 .button {
-  padding: 10px;
+  padding: 11px;
   border-radius: 5px;
   background-color: #cc6633;
   color: #000066;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
   position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
@@ -279,6 +283,10 @@ body {
   }
 }
 
+.form__button {
+  width: 230px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -326,6 +334,10 @@ body {
 /**********************************Hero Section*******************************/
 .hero__section {
   padding: 120px 30px;
+  position: relative;
+}
+
+.hero__section .hero__wraper {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -337,6 +349,15 @@ body {
   .hero__section {
     padding: 70px 30px;
   }
+}
+
+.hero__section .hero__dots__background {
+  transform: rotate(270deg);
+  position: absolute;
+  left: 29%;
+  top: -54%;
+  object-fit: 100%;
+  width: 660px;
 }
 
 .hero__section h1 {
