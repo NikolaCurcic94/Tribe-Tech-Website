@@ -1,3 +1,25 @@
+@import "../../scss/config";
+@font-face {
+  font-family: "Sailec";
+  src: url("../fonts/Sailec\ Regular.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../fonts/Sailec\ Bold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: "Sailec", sans-serif;
+  color: blue;
+  box-sizing: border-box;
+}
+
 body {
   background-color: blue;
   display: flex;
@@ -10,7 +32,7 @@ body {
   background-color: white;
   border-radius: 15px;
 }
-h1,
-p {
-  color: blue;
-}
+// h1,
+// p {
+//   color: blue;
+// }
