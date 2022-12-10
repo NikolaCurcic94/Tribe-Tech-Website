@@ -108,6 +108,11 @@
       font-size: 20px;
       width: 90%;
     }
+
+    @media (max-width: 480px) {
+      font-size: 15px;
+      width: 90%;
+    }
   }
 }
 /**********************************Solution section*******************************/

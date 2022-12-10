@@ -510,6 +510,13 @@ footer .footer__icon {
   }
 }
 
+@media (max-width: 480px) {
+  .problem__section p {
+    font-size: 15px;
+    width: 90%;
+  }
+}
+
 /**********************************Solution section*******************************/
 .solution__section {
   padding: 120px 0;
