@@ -383,6 +383,7 @@ footer .footer__icon {
   gap: 40px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero__section .hero__dots__background {
@@ -540,7 +541,7 @@ footer .footer__icon {
 
 /**********************************If u are section*******************************/
 .if__you__are {
-  padding: 120px 0;
+  padding: 120px 30px;
 }
 
 @media (max-width: 768px) {
@@ -592,7 +593,13 @@ footer .footer__icon {
 
 /**********************************Working process section*******************************/
 .workin__process__section {
-  padding: 120px 0;
+  padding: 120px 30px;
+}
+
+@media (max-width: 768px) {
+  .workin__process__section {
+    border-bottom: 1px solid #303436;
+  }
 }
 
 .workin__process__section__wrapper {
@@ -619,10 +626,16 @@ footer .footer__icon {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .workin__process__section p {
+    font-size: 20px;
+    width: auto;
+  }
+}
+
 @media (max-width: 480px) {
   .workin__process__section p {
     font-size: 15px;
-    width: 90%;
   }
 }
 
