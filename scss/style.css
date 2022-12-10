@@ -669,10 +669,15 @@ footer .footer__icon {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .mission__and__purpose p {
+    width: auto;
+  }
+}
+
 @media (max-width: 480px) {
   .mission__and__purpose p {
     font-size: 15px;
-    width: 90%;
   }
 }
 
