@@ -436,6 +436,12 @@ footer .footer__icon {
   padding: 0 30px;
 }
 
+@media (max-width: 768px) {
+  .problem__section {
+    border-bottom: 1px solid #303436;
+  }
+}
+
 .problem__section__wrapper {
   display: flex;
   flex-direction: column;
@@ -480,6 +486,12 @@ footer .footer__icon {
 /**********************************Solution section*******************************/
 .solution__section {
   padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+  .solution__section {
+    border-bottom: 1px solid #303436;
+  }
 }
 
 .solution__section__wrapper {
@@ -531,6 +543,12 @@ footer .footer__icon {
   padding: 120px 0;
 }
 
+@media (max-width: 768px) {
+  .if__you__are {
+    border-bottom: 1px solid #303436;
+  }
+}
+
 .if__you__are__wrapper {
   display: flex;
   flex-direction: column;
@@ -541,7 +559,7 @@ footer .footer__icon {
 
 @media (max-width: 768px) {
   .if__you__are {
-    padding: 70px 30px;
+    padding: 70px 0;
   }
 }
 
