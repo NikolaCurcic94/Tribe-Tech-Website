@@ -17,6 +17,7 @@
   // align-items: center;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   .hero__wraper {
     display: flex;
@@ -24,7 +25,6 @@
     gap: 60px;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
   }
 
   @media (max-width: 768px) {

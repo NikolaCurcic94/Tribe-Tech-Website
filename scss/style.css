@@ -336,6 +336,7 @@ body {
   padding: 120px 30px;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .hero__section .hero__wraper {
@@ -344,7 +345,6 @@ body {
   gap: 60px;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
