@@ -460,7 +460,7 @@ footer .footer__icon {
 
 /**********************************Problem Section*******************************/
 .problem__section {
-  padding: 0 30px;
+  padding: 50px 30px;
 }
 
 @media (max-width: 768px) {
@@ -574,21 +574,33 @@ footer .footer__icon {
 
 /**********************************If u are section*******************************/
 .if__you__are {
-  padding: 120px 30px;
+  padding: 0 30px;
 }
 
 @media (max-width: 768px) {
   .if__you__are {
+    border-left: none;
+    border-right: none;
+    border-top: none;
     border-bottom: 1px solid #303436;
   }
 }
 
 .if__you__are__wrapper {
+  padding: 50px 30px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   justify-content: center;
   align-items: center;
+  border: 1px solid #303436;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .if__you__are__wrapper {
+    border: none;
+  }
 }
 
 @media (max-width: 768px) {

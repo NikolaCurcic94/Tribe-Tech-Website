@@ -69,7 +69,7 @@
 
 /**********************************Problem Section*******************************/
 .problem__section {
-  padding: 0 30px;
+  padding: 50px 30px;
   @media (max-width: 768px) {
     border-bottom: 1px solid rgb(48, 52, 54);
   }
@@ -161,17 +161,28 @@
 /**********************************If u are section*******************************/
 
 .if__you__are {
-  padding: 120px 30px;
+  padding: 0 30px;
+
   @media (max-width: 768px) {
+    border-left: none;
+    border-right: none;
+    border-top: none;
     border-bottom: 1px solid rgb(48, 52, 54);
   }
 
   &__wrapper {
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(48, 52, 54);
+    border-radius: 8px;
+
+    @media (max-width: 768px) {
+      border: none;
+    }
   }
 
   @media (max-width: 768px) {
