@@ -404,6 +404,7 @@ footer .footer__icon {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  text-align: center;
 }
 
 .hero__section .hero__dots__background {
