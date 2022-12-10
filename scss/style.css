@@ -352,7 +352,20 @@ footer {
 footer .footer__nav {
   width: 100%;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  footer .footer__nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer__nav .footer__list {
+    display: none;
+  }
 }
 
 footer ul {
