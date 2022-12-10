@@ -286,7 +286,7 @@ body {
 @media (max-width: 480px) {
   .call__us__button {
     font-size: 15px;
-    --width: 120px;
+    width: 120px;
   }
 }
 
