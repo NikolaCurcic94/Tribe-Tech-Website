@@ -277,10 +277,16 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  .call__us__button {
+    width: 120px;
+  }
+}
+
 @media (max-width: 480px) {
   .call__us__button {
     font-size: 15px;
-    width: 120px;
+    --width: 120px;
   }
 }
 
