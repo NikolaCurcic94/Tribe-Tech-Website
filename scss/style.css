@@ -210,6 +210,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   justify-content: space-around;
+  padding: 0 30px;
 }
 
 @media (max-width: 768px) {
@@ -292,6 +293,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   padding: 30px;
+  border-bottom: 1px solid #303436;
 }
 
 .header__wrapper {
@@ -331,18 +333,47 @@ body {
   margin: 0 30px;
 }
 
-/**********************************Hero Section*******************************/
-.hero__section {
-  padding: 120px 30px;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+/**********************************Footer********************************/
+footer {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+  background-color: #cc6633;
+  color: #000066;
 }
 
-.hero__section .hero__wraper {
+footer .footer__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  gap: 20px;
+}
+
+footer ul li {
+  color: #000066;
+  font-weight: 900;
+}
+
+footer .footer__icon {
+  width: 30px;
+  filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
+}
+
+/**********************************Hero Section*******************************/
+.hero__section {
+  padding: 170px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__section .hero__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
 }
@@ -357,9 +388,17 @@ body {
   transform: rotate(270deg);
   position: absolute;
   left: 29%;
-  top: -54%;
-  object-fit: 100%;
+  top: -55%;
+  object-fit: contain;
   width: 660px;
+}
+
+@media (max-width: 768px) {
+  .hero__section .hero__dots__background {
+    transform: rotate(90deg);
+    left: 48%;
+    top: -91%;
+  }
 }
 
 .hero__section h1 {
@@ -384,18 +423,18 @@ body {
 
 /**********************************Problem Section*******************************/
 .problem__section {
-  padding: 120px 30px;
+  padding: 0 30px;
+}
+
+.problem__section__wrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .problem__section {
-    padding: 70px 30px;
-  }
+  padding: 120px;
+  border: 1px solid #303436;
+  border-radius: 8px;
 }
 
 .problem__section h1 {
@@ -423,7 +462,10 @@ body {
 
 /**********************************Solution section*******************************/
 .solution__section {
-  padding: 120px 30px;
+  padding: 120px 0;
+}
+
+.solution__section__wrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -433,7 +475,7 @@ body {
 
 @media (max-width: 768px) {
   .solution__section {
-    padding: 70px 30px;
+    padding: 70px 0;
   }
 }
 
@@ -469,7 +511,10 @@ body {
 
 /**********************************If u are section*******************************/
 .if__you__are {
-  padding: 120px 30px;
+  padding: 120px 0;
+}
+
+.if__you__are__wrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -512,18 +557,15 @@ body {
 
 /**********************************Working process section*******************************/
 .workin__process__section {
-  padding: 120px 30px;
+  padding: 120px 0;
+}
+
+.workin__process__section__wrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .workin__process__section {
-    padding: 70px 30px;
-  }
 }
 
 .workin__process__section h2 {
@@ -551,18 +593,15 @@ body {
 
 /**********************************Mission and purpose section*******************************/
 .mission__and__purpose {
-  padding: 120px 30px;
-  display: flex;
+  padding: 120px 0;
+  align-items: center;
+}
+
+.mission__and__purpose__wrapper {
   flex-direction: column;
   gap: 60px;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .mission__and__purpose {
-    padding: 70px 30px;
-  }
 }
 
 .mission__and__purpose h2 {
@@ -590,14 +629,14 @@ body {
 
 /**********************************Stay in touch section*******************************/
 .stay__in__touch__section {
-  padding: 30px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .stay__in__touch__section form {
-  background-color: white;
+  background-color: #ffffff;
   padding: 50px;
   display: flex;
   width: 70%;
