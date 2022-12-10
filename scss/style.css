@@ -350,6 +350,8 @@ footer {
 
 footer p {
   color: #000066;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 footer .footer__nav {
