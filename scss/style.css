@@ -346,6 +346,9 @@ footer {
   overflow: hidden;
   padding: 30px 0;
   background-color: #cc6633;
+}
+
+footer p {
   color: #000066;
 }
 
