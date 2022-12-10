@@ -13,6 +13,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    border-bottom: 1px solid rgb(48, 52, 54);
+  }
+
   .hero__wrapper {
     display: flex;
     flex-direction: column;
@@ -20,10 +24,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  // @media (max-width: 768px) {
-  //   padding: 70px 30px;
-  // }
 
   .hero__dots__background {
     transform: rotate(270deg);
@@ -38,6 +38,13 @@
       transform: rotate(90deg);
       left: 45%;
       top: -56%;
+    }
+
+    @media (max-width: 540px) {
+      transform: rotate(0deg);
+      left: 0%;
+      top: -63%;
+      width: 527px;
     }
   }
 
@@ -75,6 +82,7 @@
 
     @media (max-width: 768px) {
       padding: 30px;
+      border: none;
     }
   }
 

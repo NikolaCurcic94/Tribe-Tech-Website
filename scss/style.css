@@ -371,6 +371,12 @@ footer .footer__icon {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .hero__section {
+    border-bottom: 1px solid #303436;
+  }
+}
+
 .hero__section .hero__wrapper {
   display: flex;
   flex-direction: column;
@@ -393,6 +399,15 @@ footer .footer__icon {
     transform: rotate(90deg);
     left: 45%;
     top: -56%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero__section .hero__dots__background {
+    transform: rotate(0deg);
+    left: 0%;
+    top: -63%;
+    width: 527px;
   }
 }
 
@@ -435,6 +450,7 @@ footer .footer__icon {
 @media (max-width: 768px) {
   .problem__section__wrapper {
     padding: 30px;
+    border: none;
   }
 }
 
