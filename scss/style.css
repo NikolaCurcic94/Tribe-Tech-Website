@@ -268,7 +268,7 @@ body {
 .call__us__button {
   padding: 5px;
   border-radius: 5px;
-  width: 240px;
+  width: 200px;
   color: #000066;
   border: none;
   font-weight: 700;
@@ -276,12 +276,6 @@ body {
   background-color: #5fcc47;
   font-size: 30px;
   font-weight: 900;
-}
-
-@media (max-width: 768px) {
-  .call__us__button {
-    width: 120px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -744,7 +738,7 @@ footer .footer__icon {
 
 .stay__in__touch__section form {
   background-color: #ffffff;
-  padding: 50px;
+  padding: 25px;
   display: flex;
   width: 70%;
   flex-direction: column;
