@@ -457,6 +457,8 @@ footer .footer__icon {
 
 .hero__section p {
   font-size: 30px;
+  color: #dfdfdfa3;
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {
