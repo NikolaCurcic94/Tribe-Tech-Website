@@ -389,6 +389,16 @@ footer .footer__icon {
   filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
 }
 
+/**********************************Scroll tracker*******************************/
+.scroll-tracker {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 8px;
+  background-color: #cc6633;
+  z-index: 10;
+  transform-origin: left;
+}
+
 /**********************************Hero Section*******************************/
 .hero__section {
   padding: 170px 30px;
