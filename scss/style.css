@@ -294,6 +294,28 @@ body {
   width: 230px;
 }
 
+/**********************************Scroll Tracker*******************************/
+.scroll-tracker {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 8px;
+  background-color: #cc6633;
+  z-index: 10;
+  transform-origin: left;
+}
+
+/**********************************Sections Animation*******************************/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -387,16 +409,6 @@ footer ul li {
 footer .footer__icon {
   width: 30px;
   filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
-}
-
-/**********************************Scroll tracker*******************************/
-.scroll-tracker {
-  position: fixed;
-  inset: 0 0 auto;
-  height: 8px;
-  background-color: #cc6633;
-  z-index: 10;
-  transform-origin: left;
 }
 
 /**********************************Hero Section*******************************/

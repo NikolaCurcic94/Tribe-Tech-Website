@@ -1,5 +1,7 @@
 import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
 
+/**********************************Scroll Tracker*******************************/
+
 const scrollTracker = document.querySelector(".scroll-tracker");
 
 const scrollTrackingTimeline = new ScrollTimeline({
@@ -17,3 +19,16 @@ scrollTracker.animate(
     timeline: scrollTrackingTimeline,
   }
 );
+
+/**********************************Sections Animation*******************************/
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelector(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
