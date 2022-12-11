@@ -21,7 +21,7 @@ scrollTracker.animate(
 );
 
 /**********************************Sections Animation*******************************/
-
+const hiddenElements = document.querySelector(".hidden");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -30,5 +30,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelector(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
