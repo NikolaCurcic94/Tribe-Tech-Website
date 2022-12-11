@@ -306,10 +306,6 @@ body {
 }
 
 /**********************************Sections Animation*******************************/
-.show {
-  opacity: 1;
-}
-
 .header {
   display: flex;
   justify-content: space-between;

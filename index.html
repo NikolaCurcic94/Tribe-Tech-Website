@@ -7,6 +7,7 @@
 
     <title>TribeTech Website</title>
     <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <script defer src="./js/index.js" type="module"></script> -->
   </head>
   <body>
@@ -37,13 +38,17 @@
         />
         <div class="hero__wrapper">
           <img class="tribetech__logo" src="" alt="TribeTechLogo" />
-          <h1>TribeTech Communication</h1>
-          <p>We generate leads with digital products</p>
-          <a class="button" href="#form">Let’s talk!</a>
+          <h1 data-aos="fade-up">TribeTech Communication</h1>
+          <p data-aos="fade-up" data-aos-delay="250">
+            We generate leads with digital products
+          </p>
+          <a class="button" href="#form" data-aos="fade-up" data-aos-delay="400"
+            >Let’s talk!</a
+          >
         </div>
       </section>
 
-      <section class="problem__section hidden">
+      <section class="problem__section hidden" data-aos="fade-up">
         <div class="problem__section__wrapper wrapper">
           <h1>What is the problem?</h1>
           <p>
@@ -55,7 +60,7 @@
         </div>
       </section>
 
-      <section class="solution__section hidden">
+      <section class="solution__section hidden" data-aos="fade-up">
         <div class="solution__section__wrapper wrapper">
           <h1>The solution is in</h1>
           <p>
@@ -71,7 +76,7 @@
         </div>
       </section>
 
-      <section class="if__you__are hidden">
+      <section class="if__you__are hidden" data-aos="fade-up">
         <div class="if__you__are__wrapper wrapper">
           <h3>If you are a B2B Tech company in the European market :</h3>
           <ul>
@@ -94,7 +99,7 @@
         </div>
       </section>
 
-      <section class="workin__process__section hidden">
+      <section class="workin__process__section hidden" data-aos="fade-up">
         <div class="workin__process__section__wrapper wrapper">
           <h2>Our working process:</h2>
           <p>
@@ -112,7 +117,7 @@
         </div>
       </section>
 
-      <section class="mission__and__purpose hidden">
+      <section class="mission__and__purpose hidden" data-aos="fade-up">
         <div class="mission__and__purpose__wrapper wrapper">
           <h2>Our Mission:</h2>
           <p>
@@ -132,7 +137,7 @@
         </div>
       </section>
 
-      <section class="stay__in__touch__section hidden">
+      <section class="stay__in__touch__section hidden" data-aos="fade-up">
         <div class="wrapper">
           <form
             action="https://formsubmit.co/d91ed915936a75607f7c96fbab459011"
@@ -283,5 +288,12 @@
       </div>
     </footer>
     <script src="./js/index.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
