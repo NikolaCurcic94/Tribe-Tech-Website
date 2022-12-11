@@ -7,7 +7,7 @@ const scrollTracker = document.querySelector(".scroll-tracker");
 const scrollTrackingTimeline = new ScrollTimeline({
   source: document.scrollingElement,
   orientation: "block",
-  scrollOfsers: [CSS.percent(0), CSS.percent(100)],
+  scrollOfsets: [CSS.percent(0), CSS.percent(100)],
 });
 
 scrollTracker.animate(
@@ -21,13 +21,34 @@ scrollTracker.animate(
 );
 
 /**********************************Sections Animation*******************************/
-const hiddenElements = document.querySelector(".hidden");
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("show");
+//     }
+//   });
+// });
+
+// const hiddenElements = document.querySelector(".hidden");
+// hiddenElements.forEach((el) => observer.observe(el));
+
+const animatedSection = document.querySelector(".hidden");
+
+const animatedSectionTimeline = new ScrollTimeline({
+  scrollOfsets: [
+    { target: animatedSection, edge: "end", threshold: "1" },
+    { target: animatedSection, edge: "start", threshold: "1" },
+  ],
 });
 
-hiddenElements.forEach((el) => observer.observe(el));
+scrollTracker.animate(
+  {
+    opacity: 1,
+    filter: blur(0),
+  },
+  {
+    duration: 1,
+    timeline: animatedSectionTimeline,
+  }
+);
