@@ -52,6 +52,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection,
@@ -307,7 +308,6 @@ body {
 /**********************************Sections Animation*******************************/
 .show {
   opacity: 1;
-  filter: blur(0);
 }
 
 .header {
