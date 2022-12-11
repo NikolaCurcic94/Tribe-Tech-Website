@@ -22,33 +22,14 @@ scrollTracker.animate(
 
 /**********************************Sections Animation*******************************/
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("show");
-//     }
-//   });
-// });
-
-// const hiddenElements = document.querySelector(".hidden");
-// hiddenElements.forEach((el) => observer.observe(el));
-
-const animatedSection = document.querySelector(".hidden");
-
-const animatedSectionTimeline = new ScrollTimeline({
-  scrollOfsets: [
-    { target: animatedSection, edge: "end", threshold: "1" },
-    { target: animatedSection, edge: "start", threshold: "1" },
-  ],
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
 });
 
-scrollTracker.animate(
-  {
-    opacity: 1,
-    filter: blur(0),
-  },
-  {
-    duration: 1,
-    timeline: animatedSectionTimeline,
-  }
-);
+const hiddenElements = document.querySelector(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
