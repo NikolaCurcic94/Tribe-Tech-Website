@@ -406,12 +406,7 @@ footer .footer__icon {
   padding: 170px 30px;
   position: relative;
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .hero__section {
-    border-bottom: 1px solid #303436;
-  }
+  border-bottom: 1px solid #303436;
 }
 
 .hero__section .hero__wrapper {

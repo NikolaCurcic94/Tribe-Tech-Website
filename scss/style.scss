@@ -12,10 +12,11 @@
   padding: 170px 30px;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid rgb(48, 52, 54);
 
-  @media (max-width: 768px) {
-    border-bottom: 1px solid rgb(48, 52, 54);
-  }
+  // @media (max-width: 768px) {
+  //   border-bottom: 1px solid rgb(48, 52, 54);
+  // }
 
   .hero__wrapper {
     display: flex;
