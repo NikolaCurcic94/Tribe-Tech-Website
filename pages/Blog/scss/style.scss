@@ -1,0 +1,32 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+@import "../../../scss/buttons";
+@import "../../../scss/animations";
+@import "../../../scss/components/header";
+@import "../../../scss/components/footer";
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../../../fonts/Sailec\ Regular.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../../../fonts/Sailec\ Bold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+$font-stack: "Sailec";
+
+$primary-color: #000066;
+$secondary-color: #cc6633;
+
+* {
+  font-family: $font-stack;
+  color: #ffffff;
+  box-sizing: border-box;
+}

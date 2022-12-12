@@ -200,7 +200,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: #000066;
+  background-color: #090944;
 }
 
 .wrapper {
@@ -224,7 +224,7 @@ body {
   padding: 11px;
   border-radius: 5px;
   background-color: #cc6633;
-  color: #000066;
+  color: #090944;
   border: none;
   font-size: 25px;
   font-weight: 900;
@@ -269,7 +269,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   width: 180px;
-  color: #000066;
+  color: #090944;
   border: none;
   font-weight: 700;
   position: relative;
@@ -355,7 +355,7 @@ footer {
 }
 
 footer p {
-  color: #000066;
+  color: #090944;
   font-size: 20px;
   font-weight: 800;
 }
@@ -385,7 +385,7 @@ footer ul {
 }
 
 footer ul li {
-  color: #000066;
+  color: #090944;
   font-weight: 900;
   font-size: 20px;
 }
@@ -492,6 +492,7 @@ footer .footer__icon {
 
 .problem__section h1 {
   font-size: 50px;
+  color: #ffc28c;
 }
 
 @media (max-width: 768px) {
@@ -547,6 +548,7 @@ footer .footer__icon {
 
 .solution__section h1 {
   font-size: 50px;
+  color: #ffc28c;
 }
 
 @media (max-width: 768px) {
@@ -614,6 +616,7 @@ footer .footer__icon {
 
 .if__you__are h3 {
   font-size: 40px;
+  color: #ffc28c;
 }
 
 @media (max-width: 768px) {
@@ -660,6 +663,7 @@ footer .footer__icon {
 
 .workin__process__section h2 {
   font-size: 50px;
+  color: #ffc28c;
 }
 
 @media (max-width: 768px) {
@@ -702,6 +706,7 @@ footer .footer__icon {
 
 .mission__and__purpose h2 {
   font-size: 50px;
+  color: #ffc28c;
 }
 
 @media (max-width: 768px) {
@@ -759,7 +764,7 @@ footer .footer__icon {
 .stay__in__touch__section form .lets__talk__paragraph {
   font-size: 40px;
   font-weight: 900;
-  color: #000066;
+  color: #090944;
 }
 
 @media (max-width: 480px) {
@@ -784,7 +789,7 @@ footer .footer__icon {
 
 .stay__in__touch__section form .message .message__label {
   padding-bottom: 20px;
-  color: #000066;
+  color: #090944;
 }
 
 .stay__in__touch__section form .message .message__input {
@@ -806,7 +811,7 @@ footer .footer__icon {
 }
 
 .stay__in__touch__section form h2 {
-  color: #000066;
+  color: #090944;
   font-size: 30px;
 }
 
@@ -859,7 +864,7 @@ footer .footer__icon {
   background-color: #e6e6e6;
   font-size: 15px;
   font-weight: 700;
-  color: #000066;
+  color: #090944;
 }
 
 .stay__in__touch__section form ::-webkit-input-placeholder {
@@ -873,7 +878,7 @@ footer .footer__icon {
 }
 
 .stay__in__touch__section form .input__class:focus {
-  box-shadow: 0 0 3pt 2pt #000066;
+  box-shadow: 0 0 3pt 2pt #090944;
   border: none;
   border-radius: 2px;
   outline: none;

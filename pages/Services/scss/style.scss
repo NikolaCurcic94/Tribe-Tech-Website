@@ -1,0 +1,59 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+@import "../../../scss/buttons";
+@import "../../../scss/animations";
+@import "../../../scss/components/header";
+@import "../../../scss/components/footer";
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../../../fonts/Sailec\ Regular.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sailec";
+  src: url("../../../fonts/Sailec\ Bold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+$font-stack: "Sailec";
+
+$primary-color: #000066;
+$secondary-color: #cc6633;
+
+* {
+  font-family: $font-stack;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+/***********************************Main**********************************/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  //padding: 50px;
+  height: calc(100vh - 104px - 56px);
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  .services-box {
+    width: 200px;
+    background-color: $light-orange-color;
+
+    h3 {
+      color: $primary-color;
+    }
+  }
+}
