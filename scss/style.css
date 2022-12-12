@@ -503,7 +503,7 @@ footer .footer__icon {
 .problem__section p {
   font-size: 20px;
   width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -558,7 +558,7 @@ footer .footer__icon {
 .solution__section p {
   font-size: 20px;
   width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -671,7 +671,7 @@ footer .footer__icon {
 .workin__process__section p {
   font-size: 20px;
   width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -713,7 +713,7 @@ footer .footer__icon {
 .mission__and__purpose p {
   font-size: 20px;
   width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
