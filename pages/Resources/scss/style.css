@@ -267,7 +267,6 @@ body {
 }
 
 .close__button {
-  display: none;
   filter: invert(99%) sepia(2%) saturate(547%) hue-rotate(188deg) brightness(116%) contrast(100%);
 }
 

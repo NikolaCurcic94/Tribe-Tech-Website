@@ -28,13 +28,13 @@ const navLinks = document.querySelector(".nav__links");
 
 menuButton.addEventListener("click", () => {
   navLinks.classList.add("nav__links--open");
-  closeButton.classList.add("visible");
+  closeButton.classList.remove("invisible");
   menuButton.classList.add("invisible");
 });
 
 closeButton.addEventListener("click", () => {
   navLinks.classList.remove("nav__links--open");
-  closeButton.classList.remove("visible");
+  closeButton.classList.add("invisible");
   menuButton.classList.remove("invisible");
 });
 
