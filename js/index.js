@@ -20,20 +20,6 @@ scrollTracker.animate(
   }
 );
 
-/**********************************Sections Animation*******************************/
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     console.log(entry);
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("show");
-//     }
-//   });
-// });
-
-// const hiddenElements = document.querySelector(".hidden");
-// hiddenElements.forEach((el) => observer.observe(el));
-
 /*****************************Menu button**********************************/
 
 const menuButton = document.querySelector(".menu__button");
