@@ -257,7 +257,7 @@ body {
   display: none;
   width: 39px;
   height: 19px;
-  filter: invert(99%) sepia(2%) saturate(547%) hue-rotate(188deg) brightness(116%) contrast(100%);
+  filter: invert(86%) sepia(10%) saturate(2382%) hue-rotate(320deg) brightness(102%) contrast(101%);
 }
 
 @media (max-width: 768px) {
@@ -267,7 +267,8 @@ body {
 }
 
 .close__button {
-  filter: invert(99%) sepia(2%) saturate(547%) hue-rotate(188deg) brightness(116%) contrast(100%);
+  width: 39px;
+  filter: invert(86%) sepia(10%) saturate(2382%) hue-rotate(320deg) brightness(102%) contrast(101%);
 }
 
 /************************************Call Us*******************************************/
