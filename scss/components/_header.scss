@@ -1,13 +1,19 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100vw;
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgb(48, 52, 54);
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background-color: $primary-color;
 
   &__wrapper {
     justify-content: space-between;
+    align-items: center;
     height: 43px;
 
     .tribetech__logo {
@@ -31,9 +37,9 @@
         margin-left: auto;
         justify-content: start;
 
-        @media (max-width: 768px) {
-          display: none;
-        }
+        // @media (max-width: 768px) {
+        //   display: none;
+        // }
       }
 
       li {
@@ -41,4 +47,47 @@
       }
     }
   }
+}
+
+/******************************************Navigation bar slide*****************************************/
+
+@supports (backdrop-filter: blur(10px)) {
+  .nav__links {
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: flex;
+    list-style: none;
+    position: fixed;
+    left: 0;
+    top: 83px;
+    background-color: rgb(72, 72, 255);
+    //backdrop-filter: blur(10px);
+    height: 30vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 70px;
+    gap: 1em;
+    font-size: large;
+    z-index: 14;
+    transition: all 0.6s ease-in-out;
+    //transform: translateY(-36%);
+  }
+  .nav__links--open {
+    transform: translateX(0%);
+  }
+  .menu__button {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 1em;
+  }
+}
+
+.show {
+  transform: translateY(0%);
 }

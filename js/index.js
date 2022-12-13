@@ -33,3 +33,24 @@ scrollTracker.animate(
 
 // const hiddenElements = document.querySelector(".hidden");
 // hiddenElements.forEach((el) => observer.observe(el));
+
+/*****************************Menu button**********************************/
+
+const menuButton = document.querySelector(".menu__button");
+const navLinks = document.querySelector(".nav__links");
+
+menuButton.addEventListener("click", () => {
+  navLinks.classList.add("nav__links--open");
+});
+
+// hamburger.addEventListener("click", () => {
+//   if (!menuOpen) {
+//     hamburger.classList.add("open");
+//     menuOpen = true;
+//     navLinks.classList.add("nav__links--open");
+//   } else {
+//     hamburger.classList.remove("open");
+//     menuOpen = false;
+//     navLinks.classList.remove("nav__links--open");
+//   }
+// });
