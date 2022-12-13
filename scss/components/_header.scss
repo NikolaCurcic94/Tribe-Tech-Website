@@ -63,7 +63,7 @@
     list-style: none;
     position: fixed;
     left: 0;
-    top: 83px;
+    top: -83px;
     background-color: rgb(72, 72, 255);
     //backdrop-filter: blur(10px);
     height: 30vh;
@@ -79,7 +79,7 @@
     //transform: translateY(-36%);
   }
   .nav__links--open {
-    transform: translateX(0%);
+    top: 83px;
   }
   .menu__button {
     display: inline-block;
@@ -88,6 +88,10 @@
   }
 }
 
-.show {
-  transform: translateY(0%);
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
 }

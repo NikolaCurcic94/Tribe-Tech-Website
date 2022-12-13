@@ -37,11 +37,13 @@ scrollTracker.animate(
 /*****************************Menu button**********************************/
 
 const menuButton = document.querySelector(".menu__button");
+const closeButton = document.querySelector(".close__button");
 const navLinks = document.querySelector(".nav__links");
 
 menuButton.addEventListener("click", () => {
-  //navLinks.classList.add("nav__links--open");
-  navLinks.classList.toggle("nav__links--open");
+  navLinks.classList.add("nav__links--open");
+  closeButton.classList.add("visible");
+  menuButton.classList.add("invisible");
 });
 
 // hamburger.addEventListener("click", () => {
