@@ -40,7 +40,8 @@ const menuButton = document.querySelector(".menu__button");
 const navLinks = document.querySelector(".nav__links");
 
 menuButton.addEventListener("click", () => {
-  navLinks.classList.add("nav__links--open");
+  //navLinks.classList.add("nav__links--open");
+  navLinks.classList.toggle("nav__links--open");
 });
 
 // hamburger.addEventListener("click", () => {
