@@ -46,6 +46,12 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.add("invisible");
 });
 
+closeButton.addEventListener("click", () => {
+  navLinks.classList.remove("nav__links--open");
+  closeButton.classList.remove("visible");
+  menuButton.classList.remove("invisible");
+});
+
 // hamburger.addEventListener("click", () => {
 //   if (!menuOpen) {
 //     hamburger.classList.add("open");
