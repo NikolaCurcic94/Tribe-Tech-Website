@@ -64,7 +64,7 @@
     position: fixed;
     left: 0;
     top: -266px;
-    background-color: rgb(72, 72, 255);
+    background-color: rgb(43, 43, 189);
     //backdrop-filter: blur(10px);
     height: 30vh;
     width: 100vw;
@@ -77,6 +77,10 @@
     z-index: 14;
     transition: all 0.6s ease-in-out;
     //transform: translateY(-36%);
+
+    a {
+      color: $light-orange-color;
+    }
   }
   .nav__links--open {
     top: 83px;
@@ -88,9 +92,9 @@
   }
 }
 
-.visible {
-  display: block;
-}
+// .visible {
+//   display: block;
+// }
 
 .invisible {
   display: none;

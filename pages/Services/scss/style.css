@@ -364,7 +364,7 @@ body {
     position: fixed;
     left: 0;
     top: -266px;
-    background-color: #4848ff;
+    background-color: #2b2bbd;
     height: 30vh;
     width: 100vw;
     flex-direction: column;
@@ -376,6 +376,9 @@ body {
     z-index: 14;
     transition: all 0.6s ease-in-out;
   }
+  .nav__links a {
+    color: #ffc28c;
+  }
   .nav__links--open {
     top: 83px;
   }
@@ -384,10 +387,6 @@ body {
     cursor: pointer;
     padding-right: 1em;
   }
-}
-
-.visible {
-  display: block;
 }
 
 .invisible {
