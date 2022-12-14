@@ -380,7 +380,7 @@ body {
     color: #ffc28c;
   }
   .nav__links--open {
-    top: 83px;
+    transform: translateX(100%);
   }
   .menu__button {
     display: inline-block;
