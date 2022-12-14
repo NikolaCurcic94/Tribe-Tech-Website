@@ -368,7 +368,6 @@ body {
     height: 30vh;
     width: 100vw;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
     padding-top: 70px;
     gap: 1em;

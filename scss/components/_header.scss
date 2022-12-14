@@ -64,13 +64,14 @@
     position: fixed;
     left: 0;
     top: -283px;
-    background-color: rgb(43, 43, 189);
+    background-color: rgb(14 14 102);
     //backdrop-filter: blur(10px);
     height: 30vh;
     width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    //justify-content: center;
+    align-items: flex-end;
+    text-align: left;
     padding-top: 70px;
     gap: 1em;
     font-size: large;
