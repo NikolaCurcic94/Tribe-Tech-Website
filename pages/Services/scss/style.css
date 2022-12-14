@@ -474,7 +474,7 @@ main {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 104px - 16px);
+  height: calc(100vh - 104px - 37px);
 }
 
 .services-container {
