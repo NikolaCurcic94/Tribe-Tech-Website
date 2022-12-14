@@ -36,6 +36,7 @@
         display: flex;
         margin-left: auto;
         justify-content: start;
+        align-items: center;
 
         // @media (max-width: 768px) {
         //   display: none;
@@ -70,8 +71,8 @@
     width: 100vw;
     flex-direction: column;
     //justify-content: center;
-    align-items: flex-end;
-    text-align: left;
+    align-items: center;
+    //text-align: left;
     padding-top: 70px;
     gap: 1em;
     font-size: large;
