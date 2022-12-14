@@ -2,23 +2,23 @@ import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
 
 /**********************************Scroll Tracker*******************************/
 
-const scrollTracker = document.querySelector(".scroll-tracker");
+// const scrollTracker = document.querySelector(".scroll-tracker");
 
-const scrollTrackingTimeline = new ScrollTimeline({
-  source: document.scrollingElement,
-  orientation: "block",
-  scrollOfsets: [CSS.percent(0), CSS.percent(100)],
-});
+// const scrollTrackingTimeline = new ScrollTimeline({
+//   source: document.scrollingElement,
+//   orientation: "block",
+//   scrollOfsets: [CSS.percent(0), CSS.percent(100)],
+// });
 
-scrollTracker.animate(
-  {
-    transform: ["scaleX(0)", "scaleY(1)"],
-  },
-  {
-    duration: 1,
-    timeline: scrollTrackingTimeline,
-  }
-);
+// scrollTracker.animate(
+//   {
+//     transform: ["scaleX(0)", "scaleY(1)"],
+//   },
+//   {
+//     duration: 1,
+//     timeline: scrollTrackingTimeline,
+//   }
+// );
 
 /*****************************Menu button**********************************/
 
