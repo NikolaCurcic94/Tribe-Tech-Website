@@ -8,7 +8,7 @@
   overflow: hidden;
   position: sticky;
   top: 0;
-  z-index: 15;
+  z-index: 25;
   background-color: $primary-color;
 
   &__wrapper {
@@ -74,7 +74,7 @@
     padding-top: 70px;
     gap: 1em;
     font-size: large;
-    z-index: 14;
+    z-index: 15;
     transition: all 0.6s ease-in-out;
     //transform: translateY(-36%);
 
@@ -83,7 +83,7 @@
     }
   }
   .nav__links--open {
-    transform: translateY(150%);
+    transform: translateY(144%);
   }
   .menu__button {
     display: inline-block;

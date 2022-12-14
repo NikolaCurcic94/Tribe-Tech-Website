@@ -1,5 +1,3 @@
-//import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
-
 /**********************************Scroll Tracker*******************************/
 
 // const scrollTracker = document.querySelector(".scroll-tracker");
