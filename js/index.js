@@ -23,6 +23,7 @@
 const menuButton = document.querySelector(".menu__button");
 const closeButton = document.querySelector(".close__button");
 const navLinks = document.querySelector(".nav__links");
+const aboutLink = document.querySelector(".about__link");
 
 menuButton.addEventListener("click", () => {
   navLinks.classList.add("nav__links--open");
@@ -36,14 +37,8 @@ closeButton.addEventListener("click", () => {
   menuButton.classList.remove("invisible");
 });
 
-// hamburger.addEventListener("click", () => {
-//   if (!menuOpen) {
-//     hamburger.classList.add("open");
-//     menuOpen = true;
-//     navLinks.classList.add("nav__links--open");
-//   } else {
-//     hamburger.classList.remove("open");
-//     menuOpen = false;
-//     navLinks.classList.remove("nav__links--open");
-//   }
-// });
+aboutLink.addEventListener("click", () => {
+  navLinks.classList.remove("nav__links--open");
+  closeButton.classList.add("invisible");
+  menuButton.classList.remove("invisible");
+});
