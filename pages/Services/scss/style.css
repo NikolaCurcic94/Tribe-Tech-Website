@@ -255,7 +255,7 @@ body {
 /************************************Menu Button******************************/
 .menu__button {
   display: none;
-  width: 39px;
+  width: 42px;
   filter: invert(86%) sepia(10%) saturate(2382%) hue-rotate(320deg) brightness(102%) contrast(101%);
 }
 
@@ -385,7 +385,6 @@ body {
   .menu__button {
     display: inline-block;
     cursor: pointer;
-    padding-right: 1em;
   }
 }
 
