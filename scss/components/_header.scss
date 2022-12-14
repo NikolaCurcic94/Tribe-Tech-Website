@@ -83,7 +83,8 @@
     }
   }
   .nav__links--open {
-    transform: translateY(144%);
+    //transform: translateY(144%);
+    top: 84px;
   }
   .menu__button {
     display: inline-block;
