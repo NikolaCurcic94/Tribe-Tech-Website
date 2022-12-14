@@ -11,6 +11,10 @@
   z-index: 25;
   background-color: $primary-color;
 
+  @media (max-width: 768px) {
+    padding: 5px 0;
+  }
+
   &__wrapper {
     justify-content: space-between;
     align-items: center;
