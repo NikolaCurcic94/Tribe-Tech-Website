@@ -30,3 +30,15 @@ $secondary-color: #cc6633;
   color: #ffffff;
   box-sizing: border-box;
 }
+
+/***********************************Main**********************************/
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  //padding: 50px;
+  height: calc(100vh - 104px - 16px);
+}

@@ -466,4 +466,30 @@ footer .footer__icon {
   color: #ffffff;
   box-sizing: border-box;
 }
+
+/***********************************Main**********************************/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 104px - 16px);
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.services-container .services-box {
+  width: 200px;
+  background-color: #ffc28c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

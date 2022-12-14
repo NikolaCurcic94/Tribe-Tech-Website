@@ -466,4 +466,14 @@ footer .footer__icon {
   color: #ffffff;
   box-sizing: border-box;
 }
+
+/***********************************Main**********************************/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 104px - 16px);
+}
 /*# sourceMappingURL=style.css.map */
