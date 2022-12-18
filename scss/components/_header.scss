@@ -59,6 +59,9 @@
 @supports (backdrop-filter: blur(10px)) {
   .nav__links {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
   }
 }
 
