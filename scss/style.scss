@@ -12,7 +12,12 @@
   padding: 170px 30px;
   position: relative;
   overflow: hidden;
+  height: 100vh;
   border-bottom: 1px solid rgb(48, 52, 54);
+  // background-image: url("../img/Banner_Linije\ -\ horizontal-01.svg");
+  // background-size: 150%;
+  // background-position: 40% 44%;
+  // background-repeat: no-repeat;
 
   // @media (max-width: 768px) {
   //   border-bottom: 1px solid rgb(48, 52, 54);
@@ -26,16 +31,22 @@
     align-items: center;
     overflow: hidden;
     text-align: center;
+    padding: 100px 0;
   }
 
   .hero__dots__background {
     transform: rotate(270deg);
     //transform: rotateY(180deg);
     position: absolute;
-    left: 29%;
-    top: -55%;
+    left: 27%;
+    top: -30%;
     object-fit: contain;
+    object-position: 50% 50%;
     width: 660px;
+    overflow: hidden;
+    animation: hero-scale;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
 
     @media (max-width: 768px) {
       transform: rotate(90deg);
@@ -68,6 +79,16 @@
     }
   }
 }
+
+// @keyframes hero-scale {
+//   0% {
+//     transform: scale(0.9);
+//   }
+
+//   100% {
+//     transform: scale(1);
+//   }
+// }
 
 /**********************************Problem Section*******************************/
 .problem__section {
@@ -412,7 +433,7 @@
       border-radius: 2px;
       width: 100%;
       background-color: rgb(230, 230, 230);
-      font-size: 15px;
+      font-size: 17px;
       font-weight: 700;
       color: $primary-color;
     }

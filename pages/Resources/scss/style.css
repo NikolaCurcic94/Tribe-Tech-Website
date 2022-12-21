@@ -312,7 +312,8 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid #303436;
   overflow: hidden;
-  position: sticky;
+  position: fixed;
+  position: relative;
   top: 0;
   z-index: 25;
   background-color: #090944;
@@ -351,6 +352,7 @@ body {
   margin-left: auto;
   justify-content: start;
   align-items: center;
+  z-index: 15;
 }
 
 .header__wrapper .header__nav li {
@@ -358,15 +360,6 @@ body {
 }
 
 /******************************************Navigation bar slide*****************************************/
-@supports (backdrop-filter: blur(10px)) {
-  .nav__links {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-  }
-}
-
 @media (max-width: 768px) {
   .nav__links {
     display: flex;
@@ -374,7 +367,6 @@ body {
     position: fixed;
     left: 0;
     top: -283px;
-    background-color: 7 7 54 / 0%;
     height: 30vh;
     width: 100vw;
     flex-direction: column;
