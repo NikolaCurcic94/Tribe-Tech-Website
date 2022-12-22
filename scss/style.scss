@@ -21,6 +21,19 @@
   background-position: 47% -43%;
   background-repeat: no-repeat;
   //background-attachment: fixed;
+  animation: hero-scale;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes hero-scale {
+    0% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 
   @media (max-width: 450px) {
     background-image: url("../img/dots-hero.svg");
@@ -55,9 +68,6 @@
     //transform: rotate(270deg);
     z-index: 12;
     overflow: hidden;
-    animation: hero-scale;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in;
 
     // @media (max-width: 768px) {
     //   transform: rotate(90deg);
@@ -90,16 +100,6 @@
     }
   }
 }
-
-// @keyframes hero-scale {
-//   0% {
-//     transform: scale(0.9);
-//   }
-
-//   100% {
-//     transform: scale(1);
-//   }
-// }
 
 /**********************************Problem Section*******************************/
 .problem__section {
