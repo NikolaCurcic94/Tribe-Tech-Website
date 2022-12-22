@@ -779,6 +779,44 @@ footer .footer__icon {
   }
 }
 
+.workin__process__timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.workin__process__timeline .circle__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  gap: 100px;
+}
+
+.workin__process__timeline .circle__wrapper p {
+  font-size: 15px;
+  width: 50%;
+}
+
+.workin__process__timeline .odd__circle__wrapper {
+  justify-content: end;
+}
+
+.circle {
+  height: 200px;
+}
+
+.odd__circle {
+  transform: rotateZ(270deg);
+}
+
+.even__circle {
+  transform: rotateZ(270deg);
+}
+
 /**********************************Mission and purpose section*******************************/
 .mission__and__purpose {
   padding: 120px 0;
