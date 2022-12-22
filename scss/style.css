@@ -469,8 +469,22 @@ footer .footer__icon {
   justify-content: center;
   background-image: url("../img/dots-hero.svg");
   background-size: 100%;
-  background-position: 47% -43%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 480px) {
+  .hero__section {
+    background-size: 100%;
+    background-position: 47% 108%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__section {
+    background-size: 100%;
+    background-position: 47% 108%;
+  }
 }
 
 .hero__section .hero__wrapper {
@@ -482,35 +496,17 @@ footer .footer__icon {
   align-items: center;
   overflow: hidden;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 30px;
   position: absolute;
   top: 20%;
 }
 
 .hero__section .hero__dots__background {
-  transform: rotate(270deg);
   z-index: 12;
   overflow: hidden;
   animation: hero-scale;
   animation-duration: 300ms;
   animation-timing-function: ease-in;
-}
-
-@media (max-width: 768px) {
-  .hero__section .hero__dots__background {
-    transform: rotate(90deg);
-    left: 45%;
-    top: -56%;
-  }
-}
-
-@media (max-width: 540px) {
-  .hero__section .hero__dots__background {
-    transform: rotate(0deg);
-    left: 0%;
-    top: -63%;
-    width: 527px;
-  }
 }
 
 .hero__section h1 {
