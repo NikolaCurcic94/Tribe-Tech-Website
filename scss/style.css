@@ -469,8 +469,8 @@ footer .footer__icon {
   justify-content: center;
   background-image: url("../img/dots-hero2.svg");
   background-size: 100%;
+  background-position: 47% -43%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media (max-width: 450px) {
