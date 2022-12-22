@@ -9,21 +9,24 @@
 /**********************************Hero Section*******************************/
 
 .hero__section {
-  padding: 170px 30px;
+  padding: 60px 0px;
   position: relative;
   overflow: hidden;
   height: 100vh;
   border-bottom: 1px solid rgb(48, 52, 54);
-  // background-image: url("../img/Banner_Linije\ -\ horizontal-01.svg");
-  // background-size: 150%;
-  // background-position: 40% 44%;
-  // background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/dots-hero.svg");
+  background-size: 100%;
+  background-position: 47% -43%;
+  background-repeat: no-repeat;
 
   // @media (max-width: 768px) {
   //   border-bottom: 1px solid rgb(48, 52, 54);
   // }
 
   .hero__wrapper {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -32,14 +35,19 @@
     overflow: hidden;
     text-align: center;
     padding: 100px 0;
+    //z-index: 5;
+    position: absolute;
+    //left: 27%;
+    top: 20%;
   }
 
   .hero__dots__background {
     transform: rotate(270deg);
     //transform: rotateY(180deg);
-    position: absolute;
-    left: 27%;
-    top: -30%;
+    // position: absolute;
+    z-index: 12;
+    // left: 27%;
+    // top: -30%;
     object-fit: contain;
     object-position: 50% 50%;
     width: 660px;

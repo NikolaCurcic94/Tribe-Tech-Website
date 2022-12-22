@@ -7,9 +7,9 @@
   border-bottom: 1px solid rgb(48, 52, 54);
   overflow: hidden;
   position: fixed;
-  position: relative;
+
   top: 0;
-  z-index: 25;
+  z-index: 100;
   background-color: $primary-color;
 
   @media (max-width: 768px) {
@@ -58,47 +58,62 @@
 
 /******************************************Navigation bar slide*****************************************/
 
-// @supports (backdrop-filter: blur(10px)) {
-//   .nav__links {
-//     backdrop-filter: blur(10px);
-//     -webkit-backdrop-filter: blur(10px);
-//     -moz-backdrop-filter: blur(10px);
-//     -ms-backdrop-filter: blur(10px);
-//   }
-// }
-
 @media (max-width: 768px) {
   .nav__links {
     display: flex;
     list-style: none;
     position: fixed;
     left: 0;
-    top: -283px;
-    //background-color: 7 7 54 / 0%;
-    //background-color: rgb(14 14 102);
-    //backdrop-filter: blur(10px);
-    height: 30vh;
     width: 100vw;
     flex-direction: column;
-    //justify-content: center;
+    justify-content: center;
     align-items: center;
-    //text-align: left;
-    padding-top: 30px;
-    gap: 1em;
     font-size: large;
     z-index: 15;
     transition: all 0.6s ease-in-out;
-    border-bottom: 1px solid rgb(48, 52, 54);
-    //transform: translateY(-36%);
+    //transform: translateY(-25px);
+    opacity: 0;
+    visibility: hidden;
+
+    .nav__link {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      transition: all 1s ease-in-out;
+      transition-delay: calc(0.1s * var(--i));
+      border-bottom: 1px solid rgb(48, 52, 54);
+      background-color: rgb(62, 31, 201);
+      width: 100%;
+      z-index: 5;
+      // opacity: 0;
+      // visibility: hidden;
+    }
 
     a {
       color: $light-orange-color;
     }
   }
+
   .nav__links--open {
-    //transform: translateY(144%);
-    top: 64px;
+    transform: translateY(133px);
+    visibility: visible;
+    opacity: 1;
   }
+
+  .visible {
+    transform: translateY(-10px);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  // .hidden {
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   transition: all 0.8s ease-in-out;
+  //   //transform: translateY(-450px);
+  // }
+
   .menu__button {
     display: inline-block;
     cursor: pointer;
