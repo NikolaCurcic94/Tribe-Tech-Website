@@ -467,16 +467,19 @@ footer .footer__icon {
   border-bottom: 1px solid #303436;
   display: flex;
   justify-content: center;
-  background-image: url("../img/dots-hero.svg");
+  background-image: url("../img/dots-hero2.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .hero__section {
+    background-image: url("../img/dots-hero.svg");
     background-size: 100%;
-    background-position: 47% 108%;
+    background-size: 100%;
+    background-position: 47% -84%;
+    height: 90vh;
   }
 }
 
