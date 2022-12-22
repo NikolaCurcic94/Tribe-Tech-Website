@@ -9,7 +9,7 @@
   position: fixed;
 
   top: 0;
-  z-index: 100;
+  z-index: 20;
   background-color: $primary-color;
 
   @media (max-width: 768px) {
@@ -42,7 +42,7 @@
         margin-left: auto;
         justify-content: start;
         align-items: center;
-        z-index: 15;
+        //z-index: 15;
 
         // @media (max-width: 768px) {
         //   display: none;
@@ -60,6 +60,7 @@
 
 @media (max-width: 768px) {
   .nav__links {
+    position: relative;
     display: flex;
     list-style: none;
     position: fixed;
@@ -85,7 +86,7 @@
       border-bottom: 1px solid rgb(48, 52, 54);
       background-color: rgb(62, 31, 201);
       width: 100%;
-      z-index: 5;
+      //z-index: 5;
       // opacity: 0;
       // visibility: hidden;
     }

@@ -314,7 +314,7 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 20;
   background-color: #090944;
 }
 
@@ -351,7 +351,6 @@ body {
   margin-left: auto;
   justify-content: start;
   align-items: center;
-  z-index: 15;
 }
 
 .header__wrapper .header__nav li {
@@ -361,6 +360,7 @@ body {
 /******************************************Navigation bar slide*****************************************/
 @media (max-width: 768px) {
   .nav__links {
+    position: relative;
     display: flex;
     list-style: none;
     position: fixed;
@@ -385,7 +385,6 @@ body {
     border-bottom: 1px solid #303436;
     background-color: #3e1fc9;
     width: 100%;
-    z-index: 5;
   }
   .nav__links a {
     color: #ffc28c;

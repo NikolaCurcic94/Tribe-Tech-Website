@@ -21,10 +21,6 @@
   background-position: 47% -43%;
   background-repeat: no-repeat;
 
-  // @media (max-width: 768px) {
-  //   border-bottom: 1px solid rgb(48, 52, 54);
-  // }
-
   .hero__wrapper {
     margin: 0 auto;
     display: flex;
@@ -43,14 +39,7 @@
 
   .hero__dots__background {
     transform: rotate(270deg);
-    //transform: rotateY(180deg);
-    // position: absolute;
     z-index: 12;
-    // left: 27%;
-    // top: -30%;
-    object-fit: contain;
-    object-position: 50% 50%;
-    width: 660px;
     overflow: hidden;
     animation: hero-scale;
     animation-duration: 300ms;
