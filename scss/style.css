@@ -467,7 +467,7 @@ footer .footer__icon {
   border-bottom: 1px solid #303436;
   display: flex;
   justify-content: center;
-  background-image: url("../img/dots-hero2.svg");
+  background-image: url("../img/dots-hero2.png");
   background-size: 100%;
   background-position: 47% -43%;
   background-repeat: no-repeat;
@@ -490,7 +490,7 @@ footer .footer__icon {
     background-image: url("../img/dots-hero.svg");
     background-size: 100%;
     background-position: 47% 70%;
-    height: 95vh;
+    height: 90vh;
   }
 }
 
@@ -503,7 +503,7 @@ footer .footer__icon {
 
 @media (max-width: 400px) {
   .hero__section {
-    height: 80vh;
+    height: 85vh;
     background-size: 100%;
     background-position: 47% 55%;
   }
