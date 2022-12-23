@@ -40,7 +40,7 @@ menuButton.addEventListener("click", () => {
 });
 
 closeButton.addEventListener("click", () => {
-  //navLinks.classList.remove("nav__links--open");
+  navLinks.classList.remove("nav__links--open");
   closeButton.classList.add("invisible");
   menuButton.classList.remove("invisible");
   navLink.classList.remove("visible");
