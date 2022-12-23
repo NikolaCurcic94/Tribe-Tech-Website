@@ -12,13 +12,13 @@
   padding: 60px 0px;
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid rgb(48, 52, 54);
   display: flex;
   justify-content: center;
-  background-image: url("../img/dots-hero3.svg");
-  background-size: contain;
-  background-position: 47% -43%;
+  background-image: url("../img/dots-hero2.png");
+  background-size: cover;
+  //background-position: 47% 0%;
   background-repeat: no-repeat;
   background-origin: border-box;
   //background-attachment: fixed;
@@ -36,22 +36,28 @@
     }
   }
 
+  @media (max-width: 768px) {
+    background-image: url("../img/dots-hero.svg");
+    //background-position: -25% -70%;
+    //height: 100vh;
+  }
+
   @media (max-width: 450px) {
     background-image: url("../img/dots-hero.svg");
-    background-size: 100%;
-    background-position: 47% 70%;
+    background-size: contain;
+    background-position: 47% 100%;
     height: 90vh;
   }
 
   @media (max-width: 430px) {
-    background-size: 103%;
-    background-position: 47% -65%;
+    //background-size: 103%;
+    //background-position: 47% 100%;
   }
 
   @media (max-width: 400px) {
     height: 85vh;
     background-size: 100%;
-    background-position: 47% 55%;
+    // background-position: 47% 55%;
   }
 
   .hero__wrapper {
