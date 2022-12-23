@@ -22,16 +22,16 @@
 
 const menuButton = document.querySelector(".menu__button");
 const closeButton = document.querySelector(".close__button");
-//const navLinks = document.querySelector(".nav__links");
+const navLinks = document.querySelector(".nav__links");
 const navLink = document.querySelectorAll(".nav__link");
 const aboutLink = document.querySelector(".about__link");
 
 menuButton.addEventListener("click", () => {
-  //navLinks.classList.add("nav__links--open");
+  navLinks.classList.add("nav__links--open");
   closeButton.classList.remove("invisible");
   menuButton.classList.add("invisible");
-  // navLink.classList.add("visible");
-  // navLink.classList.remove("hidden");
+  navLink.classList.add("visible");
+  navLink.classList.remove("hidden");
   console.log(navLink);
   navLink.forEach((element) => {
     element.classList.add("visible");
