@@ -17,9 +17,10 @@
   display: flex;
   justify-content: center;
   background-image: url("../img/dots-hero2.png");
-  background-size: 100%;
+  background-size: contain;
   background-position: 47% -43%;
   background-repeat: no-repeat;
+  background-origin: border-box;
   //background-attachment: fixed;
   animation: hero-scale;
   animation-duration: 1.2s;
