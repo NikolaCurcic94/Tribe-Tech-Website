@@ -487,13 +487,6 @@ footer .footer__icon {
 @media (max-width: 768px) {
   .hero__section {
     background-image: url("../img/dots-hero.svg");
-  }
-}
-
-@media (max-width: 450px) {
-  .hero__section {
-    background-image: url("../img/dots-hero.svg");
-    background-size: contain;
     background-position: 47% 100%;
     height: 90vh;
   }
