@@ -390,7 +390,7 @@ body {
     padding: 10px;
     transition: all 1s ease-in-out;
     transition-delay: calc(0.2s * var(--i));
-    border-bottom: 1px solid #303436;
+    border-bottom: 2px solid #ffc28c;
     background-color: #1a086d;
     width: 100%;
     z-index: -5;

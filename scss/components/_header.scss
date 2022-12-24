@@ -80,7 +80,8 @@
       padding: 10px;
       transition: all 1s ease-in-out;
       transition-delay: calc(0.2s * var(--i));
-      border-bottom: 1px solid rgb(48, 52, 54);
+      // border-bottom: 1px solid rgb(48, 52, 54);
+      border-bottom: 2px solid $light-orange-color;
       background-color: #1a086d;
       width: 100%;
       z-index: -5;
