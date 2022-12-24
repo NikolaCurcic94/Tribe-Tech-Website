@@ -678,39 +678,88 @@ footer .footer__icon {
   display: flex;
   gap: 30px;
   justify-content: center;
-  overflow: hidden;
   padding-top: 40px;
-  height: 340px;
+  height: 450px;
+}
+
+@media (max-width: 1100px) {
+  .workin__process__timeline {
+    height: 390px;
+  }
 }
 
 @media (max-width: 768px) {
   .workin__process__timeline {
     padding-top: 0;
-    width: 450px;
+    min-width: 450px;
     flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .workin__process__timeline {
+    gap: 10px;
   }
 }
 
 .workin__process__timeline .circle__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .workin__process__timeline .circle__wrapper {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .workin__process__timeline .circle__wrapper {
+    width: 165px;
+  }
 }
 
 .circle {
-  height: 200px;
+  height: 300px;
+}
+
+@media (max-width: 1100px) {
+  .circle {
+    height: 250px;
+  }
 }
 
 @media (max-width: 768px) {
   .circle {
     transform: rotateZ(270deg);
+    height: 240px;
   }
 }
 
 @media (max-width: 450px) {
   .circle {
-    height: 150px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .even__circle__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.odd__circle__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .odd__circle__wrapper {
+    align-items: center;
   }
 }
 
@@ -718,8 +767,20 @@ footer .footer__icon {
   align-self: flex-end;
 }
 
+@media (max-width: 768px) {
+  .odd__circle {
+    align-self: center;
+  }
+}
+
 .even__circle {
   align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .even__circle {
+    align-self: center;
+  }
 }
 
 /**********************************Mission and purpose section*******************************/
