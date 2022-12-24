@@ -519,7 +519,6 @@ footer .footer__icon {
 
 /**********************************Hero Section*******************************/
 .hero__section {
-  padding: 60px 0px;
   position: relative;
   overflow: hidden;
   height: 90vh;
@@ -568,7 +567,7 @@ footer .footer__icon {
   align-items: center;
   overflow: hidden;
   text-align: center;
-  padding: 100px 30px;
+  padding: 50px 30px 100px 30px;
   position: absolute;
   top: 20%;
 }
