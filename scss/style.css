@@ -668,13 +668,13 @@ footer .footer__icon {
 }
 
 /**********************************Working process section*******************************/
-@media (max-width: 768px) {
-  .workin__process__section {
+@media (max-width: 950px) {
+  .working__process__section {
     border-bottom: 1px solid #303436;
   }
 }
 
-.workin__process__timeline {
+.working__process__timeline {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -683,15 +683,14 @@ footer .footer__icon {
 }
 
 @media (max-width: 1100px) {
-  .workin__process__timeline {
+  .working__process__timeline {
     height: 390px;
   }
 }
 
-@media (max-width: 768px) {
-  .workin__process__timeline {
-    padding-top: 0;
-    min-width: 450px;
+@media (max-width: 950px) {
+  .working__process__timeline {
+    padding-top: 50px;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -699,25 +698,25 @@ footer .footer__icon {
 }
 
 @media (max-width: 450px) {
-  .workin__process__timeline {
+  .working__process__timeline {
     gap: 10px;
   }
 }
 
-.workin__process__timeline .circle__wrapper {
+.working__process__timeline .circle__wrapper {
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .workin__process__timeline .circle__wrapper {
-    width: 200px;
-    height: 100px;
+@media (max-width: 950px) {
+  .working__process__timeline .circle__wrapper {
+    width: 170px;
+    height: 80px;
   }
 }
 
 @media (max-width: 450px) {
-  .workin__process__timeline .circle__wrapper {
+  .working__process__timeline .circle__wrapper {
     width: 165px;
   }
 }
@@ -732,20 +731,20 @@ footer .footer__icon {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .circle {
     transform: rotateZ(270deg);
     height: 240px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 950px) {
   .circle {
     height: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .even__circle__wrapper {
     display: flex;
     align-items: center;
@@ -757,7 +756,7 @@ footer .footer__icon {
   justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .odd__circle__wrapper {
     align-items: center;
   }
@@ -767,7 +766,7 @@ footer .footer__icon {
   align-self: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .odd__circle {
     align-self: center;
   }
@@ -777,7 +776,7 @@ footer .footer__icon {
   align-self: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .even__circle {
     align-self: center;
   }

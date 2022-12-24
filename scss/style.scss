@@ -192,13 +192,13 @@
 
 /**********************************Working process section*******************************/
 
-.workin__process__section {
-  @media (max-width: 768px) {
+.working__process__section {
+  @media (max-width: 950px) {
     border-bottom: 1px solid rgb(48, 52, 54);
   }
 }
 
-.workin__process__timeline {
+.working__process__timeline {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -211,9 +211,9 @@
     height: 390px;
   }
 
-  @media (max-width: 768px) {
-    padding-top: 0;
-    min-width: 450px;
+  @media (max-width: 950px) {
+    padding-top: 50px;
+    // min-width: 450px;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -228,9 +228,9 @@
     align-items: center;
     //justify-content: space-between;
 
-    @media (max-width: 768px) {
-      width: 200px;
-      height: 100px;
+    @media (max-width: 950px) {
+      width: 170px;
+      height: 80px;
       //justify-content: center;
     }
 
@@ -247,18 +247,18 @@
     height: 250px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     transform: rotateZ(270deg);
     height: 240px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 950px) {
     height: 200px;
   }
 }
 
 .even__circle__wrapper {
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     display: flex;
     align-items: center;
     // justify-content: flex-start;
@@ -269,7 +269,7 @@
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     align-items: center;
   }
 }
@@ -277,7 +277,7 @@
 .odd__circle {
   align-self: flex-end;
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     align-self: center;
   }
 }
@@ -285,7 +285,7 @@
 .even__circle {
   align-self: flex-start;
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     align-self: center;
   }
 }
