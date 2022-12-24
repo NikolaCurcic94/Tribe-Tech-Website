@@ -229,13 +229,19 @@
     //justify-content: space-between;
 
     @media (max-width: 950px) {
+      width: 200px;
+      height: 100px;
+      //justify-content: center;
+    }
+
+    @media (max-width: 768px) {
       width: 170px;
       height: 80px;
-      //justify-content: center;
     }
 
     @media (max-width: 450px) {
       width: 165px;
+      height: 100px;
     }
   }
 }
@@ -244,7 +250,7 @@
   height: 300px;
 
   @media (max-width: 1100px) {
-    height: 250px;
+    height: 260px;
   }
 
   @media (max-width: 950px) {
@@ -252,7 +258,11 @@
     height: 240px;
   }
 
-  @media (max-width: 950px) {
+  // @media (max-width: 950px) {
+  //   height: 200px;
+  // }
+
+  @media (max-width: 768px) {
     height: 200px;
   }
 }

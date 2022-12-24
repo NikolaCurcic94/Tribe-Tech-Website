@@ -710,6 +710,13 @@ footer .footer__icon {
 
 @media (max-width: 950px) {
   .working__process__timeline .circle__wrapper {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .working__process__timeline .circle__wrapper {
     width: 170px;
     height: 80px;
   }
@@ -718,6 +725,7 @@ footer .footer__icon {
 @media (max-width: 450px) {
   .working__process__timeline .circle__wrapper {
     width: 165px;
+    height: 100px;
   }
 }
 
@@ -727,7 +735,7 @@ footer .footer__icon {
 
 @media (max-width: 1100px) {
   .circle {
-    height: 250px;
+    height: 260px;
   }
 }
 
@@ -738,7 +746,7 @@ footer .footer__icon {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
   .circle {
     height: 200px;
   }
