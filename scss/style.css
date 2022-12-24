@@ -509,6 +509,7 @@ footer .footer__icon {
   gap: 60px;
   justify-content: center;
   padding: 120px 30px;
+  align-items: center;
 }
 
 @media (max-width: 450px) {
@@ -675,11 +676,19 @@ footer .footer__icon {
 
 .workin__process__timeline {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
   padding-top: 40px;
+  height: 340px;
+}
+
+@media (max-width: 768px) {
+  .workin__process__timeline {
+    padding-top: 0;
+    width: 450px;
+    flex-direction: column;
+  }
 }
 
 .workin__process__timeline .circle__wrapper {
@@ -687,23 +696,30 @@ footer .footer__icon {
   align-items: center;
   justify-content: space-between;
   width: 70%;
-  gap: 100px;
-}
-
-.workin__process__timeline .odd__circle__wrapper {
-  justify-content: end;
 }
 
 .circle {
   height: 200px;
 }
 
+@media (max-width: 768px) {
+  .circle {
+    transform: rotateZ(270deg);
+  }
+}
+
+@media (max-width: 450px) {
+  .circle {
+    height: 150px;
+  }
+}
+
 .odd__circle {
-  transform: rotateZ(270deg);
+  align-self: flex-end;
 }
 
 .even__circle {
-  transform: rotateZ(270deg);
+  align-self: flex-start;
 }
 
 /**********************************Mission and purpose section*******************************/

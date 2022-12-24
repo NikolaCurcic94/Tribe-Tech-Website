@@ -42,6 +42,7 @@
   gap: 60px;
   justify-content: center;
   padding: 120px 30px;
+  align-items: center;
 
   @media (max-width: 450px) {
     padding: 80px 30px;
@@ -199,35 +200,47 @@
 
 .workin__process__timeline {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
   padding-top: 40px;
+  height: 340px;
+  //width: 680px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+    width: 450px;
+    flex-direction: column;
+  }
 
   .circle__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    gap: 100px;
-  }
-
-  .odd__circle__wrapper {
-    justify-content: end;
+    //height: 120px;
+    // gap: 100px;
   }
 }
 
 .circle {
   height: 200px;
+
+  @media (max-width: 768px) {
+    transform: rotateZ(270deg);
+  }
+
+  @media (max-width: 450px) {
+    height: 150px;
+  }
 }
 
 .odd__circle {
-  transform: rotateZ(270deg);
+  align-self: flex-end;
 }
 
 .even__circle {
-  transform: rotateZ(270deg);
+  align-self: flex-start;
 }
 
 /**********************************Mission and purpose section*******************************/
