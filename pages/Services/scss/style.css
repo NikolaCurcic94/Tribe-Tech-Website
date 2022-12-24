@@ -382,7 +382,7 @@ body {
     font-size: large;
     z-index: 15;
     transition: all 0.6s ease-in-out;
-    transform: translateY(-122px);
+    transform: translateY(-185px);
   }
   .nav__links .nav__link {
     position: relative;
@@ -397,10 +397,11 @@ body {
     z-index: -5;
   }
   .nav__links a {
+    font-weight: 700;
     color: #ffc28c;
   }
   .nav__links--open {
-    transform: translateY(164px);
+    transform: translateY(40px);
     visibility: visible;
     opacity: 1;
   }
