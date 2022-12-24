@@ -467,6 +467,42 @@ footer .footer__icon {
   filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
 }
 
+/**********************************Section mixins*******************************/
+.section__heading {
+  font-size: 50px;
+  color: #ffc28c;
+}
+
+@media (max-width: 768px) {
+  .section__heading {
+    font-size: 35px;
+  }
+}
+
+.section__paragraph {
+  font-size: 18px;
+  width: 70%;
+  text-align: left;
+  line-height: 30px;
+  max-width: 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .section__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__paragraph {
+    font-size: 15px;
+  }
+}
+
 /**********************************Hero Section*******************************/
 .hero__section {
   padding: 60px 0px;
@@ -523,21 +559,6 @@ footer .footer__icon {
   top: 20%;
 }
 
-.hero__section .hero__dots__background {
-  z-index: 12;
-  overflow: hidden;
-}
-
-.hero__section h1 {
-  font-size: 50px;
-}
-
-@media (max-width: 768px) {
-  .hero__section h1 {
-    font-size: 35px;
-  }
-}
-
 .hero__section p {
   font-size: 30px;
   color: #dfdfdfa3;
@@ -567,46 +588,15 @@ footer .footer__icon {
   gap: 60px;
   justify-content: center;
   align-items: center;
-  padding: 120px;
+  padding: 120px 0;
   border: 1px solid #303436;
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .problem__section__wrapper {
-    padding: 30px;
+    padding: 30px 0;
     border: none;
-  }
-}
-
-.problem__section h1 {
-  font-size: 50px;
-  color: #ffc28c;
-}
-
-@media (max-width: 768px) {
-  .problem__section h1 {
-    font-size: 35px;
-  }
-}
-
-.problem__section p {
-  font-size: 20px;
-  width: 70%;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .problem__section p {
-    font-size: 20px;
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .problem__section p {
-    font-size: 15px;
-    width: 90%;
   }
 }
 
@@ -632,39 +622,6 @@ footer .footer__icon {
 @media (max-width: 768px) {
   .solution__section {
     padding: 70px 0;
-  }
-}
-
-.solution__section h1 {
-  font-size: 50px;
-  color: #ffc28c;
-}
-
-@media (max-width: 768px) {
-  .solution__section h1 {
-    font-size: 35px;
-  }
-}
-
-.solution__section p {
-  font-size: 20px;
-  width: 70%;
-  text-align: left;
-  line-height: 28px;
-}
-
-@media (max-width: 768px) {
-  .solution__section p {
-    font-size: 18px;
-    word-spacing: 3px;
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .solution__section p {
-    font-size: 15px;
-    width: 90%;
   }
 }
 
@@ -717,7 +674,7 @@ footer .footer__icon {
 }
 
 .if__you__are li {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -752,38 +709,6 @@ footer .footer__icon {
   align-items: center;
 }
 
-.workin__process__section h2 {
-  font-size: 50px;
-  color: #ffc28c;
-}
-
-@media (max-width: 768px) {
-  .workin__process__section h2 {
-    font-size: 25px;
-  }
-}
-
-.workin__process__section p {
-  font-size: 20px;
-  width: 70%;
-  text-align: left;
-  line-height: 28px;
-  word-spacing: 3px;
-}
-
-@media (max-width: 768px) {
-  .workin__process__section p {
-    font-size: 18px;
-    width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .workin__process__section p {
-    font-size: 15px;
-  }
-}
-
 .workin__process__timeline {
   display: flex;
   flex-direction: column;
@@ -799,11 +724,6 @@ footer .footer__icon {
   justify-content: space-between;
   width: 70%;
   gap: 100px;
-}
-
-.workin__process__timeline .circle__wrapper p {
-  font-size: 15px;
-  width: 50%;
 }
 
 .workin__process__timeline .odd__circle__wrapper {
@@ -833,35 +753,6 @@ footer .footer__icon {
   gap: 60px;
   justify-content: center;
   align-items: center;
-}
-
-.mission__and__purpose h2 {
-  font-size: 50px;
-  color: #ffc28c;
-}
-
-@media (max-width: 768px) {
-  .mission__and__purpose h2 {
-    font-size: 25px;
-  }
-}
-
-.mission__and__purpose p {
-  font-size: 20px;
-  width: 70%;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .mission__and__purpose p {
-    width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .mission__and__purpose p {
-    font-size: 15px;
-  }
 }
 
 /**********************************Stay in touch section*******************************/
