@@ -78,7 +78,7 @@
       display: flex;
       justify-content: center;
       padding: 10px;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
       transition-delay: calc(0.2s * var(--i));
       // border-bottom: 1px solid rgb(48, 52, 54);
       border-bottom: 2px solid $light-orange-color;

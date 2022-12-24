@@ -73,22 +73,13 @@
   }
 
   @media (max-width: 450px) {
-    // background-image: url("../img/dots-hero.svg");
-    // background-size: contain;
-    // background-position: 47% 100%;
-    // height: 90vh;
-  }
-
-  @media (max-width: 430px) {
-    //background-size: 103%;
-    //background-position: 47% 100%;
-  }
-
-  @media (max-width: 400px) {
     height: 85vh;
     background-size: 100%;
-    // background-position: 47% 55%;
   }
+
+  // @media (max-width: 430px) {
+  //   background-position: 47% 80%;
+  // }
 
   .hero__wrapper {
     margin: 0 auto;
