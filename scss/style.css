@@ -503,6 +503,20 @@ footer .footer__icon {
   }
 }
 
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+@media (max-width: 450px) {
+  .section__wrapper {
+    padding: 80px 30px;
+  }
+}
+
 /**********************************Hero Section*******************************/
 .hero__section {
   padding: 60px 0px;
@@ -572,10 +586,6 @@ footer .footer__icon {
 }
 
 /**********************************Problem Section*******************************/
-.problem__section {
-  padding: 50px 30px;
-}
-
 @media (max-width: 768px) {
   .problem__section {
     border-bottom: 1px solid #303436;
@@ -583,28 +593,17 @@ footer .footer__icon {
 }
 
 .problem__section__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  justify-content: center;
-  align-items: center;
-  padding: 120px 0;
   border: 1px solid #303436;
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .problem__section__wrapper {
-    padding: 30px 0;
     border: none;
   }
 }
 
 /**********************************Solution section*******************************/
-.solution__section {
-  padding: 120px 0;
-}
-
 @media (max-width: 768px) {
   .solution__section {
     border-bottom: 1px solid #303436;
@@ -616,20 +615,9 @@ footer .footer__icon {
   flex-direction: column;
   gap: 60px;
   justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .solution__section {
-    padding: 70px 0;
-  }
 }
 
 /**********************************If u are section*******************************/
-.if__you__are {
-  padding: 0 30px;
-}
-
 @media (max-width: 768px) {
   .if__you__are {
     border-left: none;
@@ -640,11 +628,6 @@ footer .footer__icon {
 }
 
 .if__you__are__wrapper {
-  padding: 50px 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  justify-content: center;
   align-items: center;
   border: 1px solid #303436;
   border-radius: 8px;
@@ -653,12 +636,6 @@ footer .footer__icon {
 @media (max-width: 768px) {
   .if__you__are__wrapper {
     border: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .if__you__are {
-    padding: 70px 0;
   }
 }
 
@@ -691,22 +668,10 @@ footer .footer__icon {
 }
 
 /**********************************Working process section*******************************/
-.workin__process__section {
-  padding: 120px 30px;
-}
-
 @media (max-width: 768px) {
   .workin__process__section {
     border-bottom: 1px solid #303436;
   }
-}
-
-.workin__process__section__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  justify-content: center;
-  align-items: center;
 }
 
 .workin__process__timeline {
@@ -743,18 +708,6 @@ footer .footer__icon {
 }
 
 /**********************************Mission and purpose section*******************************/
-.mission__and__purpose {
-  padding: 120px 0;
-  align-items: center;
-}
-
-.mission__and__purpose__wrapper {
-  flex-direction: column;
-  gap: 60px;
-  justify-content: center;
-  align-items: center;
-}
-
 /**********************************Stay in touch section*******************************/
 .stay__in__touch__section {
   padding-bottom: 40px;
@@ -795,7 +748,7 @@ footer .footer__icon {
   color: #090944;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .stay__in__touch__section form .lets__talk__paragraph {
     font-size: 30px;
   }
@@ -843,7 +796,7 @@ footer .footer__icon {
   font-size: 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .stay__in__touch__section form h2 {
     font-size: 20px;
   }
@@ -878,7 +831,7 @@ footer .footer__icon {
   font-weight: 900;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .stay__in__touch__section form label {
     font-size: 20px;
   }
@@ -899,7 +852,7 @@ footer .footer__icon {
   color: #666699;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .stay__in__touch__section form ::-webkit-input-placeholder {
     font-size: 10px;
   }
