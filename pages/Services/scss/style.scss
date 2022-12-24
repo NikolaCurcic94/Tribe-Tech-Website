@@ -39,17 +39,22 @@ main {
   justify-content: center;
   align-items: center;
   //padding: 50px;
-  height: calc(100vh - 104px - 37px);
+  // height: calc(100vh - 104px - 37px);
+  height: 94vh;
 }
 
 .services-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
+  width: 80%;
 
   .services-box {
-    width: 200px;
+    width: 100%;
+    padding: 20px 0;
     background-color: $light-orange-color;
 
     h3 {

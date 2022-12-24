@@ -1,13 +1,26 @@
 /**********************************Scroll Tracker*******************************/
 
-.scroll-tracker {
+.scroll-bar {
   position: fixed;
-  inset: 0 0 auto;
-  height: 8px;
-  background-color: $secondary-color;
-  z-index: 10;
-  transform-origin: left;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #1a086d;
+  // height: 8px;
+  z-index: 25;
 }
+.scroll-bar-inner {
+  position: relative;
+  width: 0%;
+  //padding: 0px;
+  background-color: $secondary-color;
+  font-size: 5px;
+  color: transparent;
+}
+// height: 8px;
+// background-color: $secondary-color;
+// z-index: 10;
+// transform-origin: left;
 
 /**********************************Sections Animation*******************************/
 

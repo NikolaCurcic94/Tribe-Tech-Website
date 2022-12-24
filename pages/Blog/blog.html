@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="scss/style.css" />
+    <script src="../../js/index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -16,24 +17,30 @@
 
         <nav class="header__nav">
           <ul class="nav__links">
-            <li><a href="../Services/services.html">Services</a></li>
-            <li>
-              <a href="../../index.html#workin__process__section">About</a>
+            <li class="nav__link hidden" style="--i: 0">
+              <a class="links" href="../Services/services.html">Services</a>
             </li>
-            <li><a href="../Resources/resoursces.html">Resources</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li class="nav__link hidden" style="--i: 1">
+              <a
+                class="about__link links"
+                href="../../index.html#workin__process__section"
+                >About</a
+              >
+            </li>
+            <li class="nav__link hidden" style="--i: 2">
+              <a class="links" href="../Resources/resoursces.html">Resources</a>
+            </li>
+            <li class="nav__link hidden" style="--i: 3">
+              <a class="links" href="blog.html">Blog</a>
+            </li>
           </ul>
         </nav>
 
         <a class="button nav__button" href="#form">Let’s talk!</a>
-        <img
-          class="menu__button"
-          src="../../img/menu-button.svg"
-          alt="menu button"
-        />
+        <img class="menu__button" src="../../img/menu.png" alt="menu button" />
         <img
           class="close__button invisible"
-          src="../../icons/circle-xmark-regular.svg"
+          src="../../img/close.png"
           alt="close button"
         />
       </div>
@@ -49,28 +56,28 @@
             <li>
               <img
                 class="footer__icon"
-                src="../../icons/facebook-brands.svg"
-                alt="facebook icon"
+                src="../../img/linkedin.png"
+                alt="linkedin icon"
               />
             </li>
             <li>
               <img
                 class="footer__icon"
-                src="../../icons/twitter-brands.svg"
-                alt="twitter icon"
+                src="../../img/youtube.png"
+                alt="youtube icon"
               />
             </li>
           </ul>
         </nav>
       </div>
     </footer>
-    <script src="../../js/index.js" type="module"></script>
+    <!-- <script src="../../js/index.js" type="module"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 200,
         duration: 1000,
       });
-    </script>
+    </script> -->
   </body>
 </html>
