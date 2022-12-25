@@ -1,23 +1,5 @@
 /**********************************Scroll Tracker*******************************/
 
-// const scrollTracker = document.querySelector(".scroll-tracker");
-
-// const scrollTrackingTimeline = new ScrollTimeline({
-//   source: document.scrollingElement,
-//   orientation: "block",
-//   scrollOfsets: [CSS.percent(0), CSS.percent(100)],
-// });
-
-// scrollTracker.animate(
-//   {
-//     transform: ["scaleX(0)", "scaleY(1)"],
-//   },
-//   {
-//     duration: 1,
-//     timeline: scrollTrackingTimeline,
-//   }
-// );
-
 document.addEventListener("DOMContentLoaded", function () {
   const progressBarInner = document.querySelector(".scroll-bar-inner");
 
