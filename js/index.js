@@ -22,26 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.querySelector(".menu__button");
   const closeButton = document.querySelector(".close__button");
-  const navLinks = document.querySelector(".nav__links");
+  const navLinks = document.querySelector(".nav__links--outer");
   //const navLink = document.querySelectorAll(".nav__link");
   const aboutLink = document.querySelector(".about__link");
 
   menuButton.addEventListener("click", () => {
-    navLinks.classList.add("nav__links--open");
+    navLinks.classList.add("nav__links--outer--open");
     closeButton.classList.remove("invisible");
     menuButton.classList.add("invisible");
     //console.log(document.querySelectorAll(".nav__link"));
-    document.querySelectorAll(".nav__link").forEach((element) => {
+    document.querySelectorAll(".nav__link--outer").forEach((element) => {
       element.classList.remove("hidden");
       element.classList.add("visible");
     });
   });
 
   closeButton.addEventListener("click", () => {
-    navLinks.classList.remove("nav__links--open");
+    navLinks.classList.remove("nav__links--outer--open");
     closeButton.classList.add("invisible");
     menuButton.classList.remove("invisible");
-    document.querySelectorAll(".nav__link").forEach((element) => {
+    document.querySelectorAll(".nav__link--outer").forEach((element) => {
       element.classList.remove("visible");
       element.classList.add("hidden");
     });
