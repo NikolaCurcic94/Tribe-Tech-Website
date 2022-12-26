@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let percent = (st / (sh - h.clientHeight)) * 100;
     let roundedPercent = Math.round(percent);
 
-    progressBarInner.style.width = roundedPercent + "%";
-    progressBarInner.style.width = roundedPercent + "%";
+    progressBarInner.style.width = percent + "%";
+    progressBarInner.innerHTML = roundedPercent + "%";
   });
 });
 
