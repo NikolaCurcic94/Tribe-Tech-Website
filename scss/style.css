@@ -346,7 +346,7 @@ body {
   font-size: 20px;
 }
 
-.header__wrapper .header__nav {
+.header__nav {
   color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
   font-weight: 700;
@@ -354,7 +354,13 @@ body {
   align-items: center;
 }
 
-.header__wrapper .header__nav .nav__links {
+@media (min-width: 769px) {
+  .header__nav--outer {
+    display: none;
+  }
+}
+
+.header__nav .nav__links {
   list-style: none;
   display: flex;
   margin-left: auto;
@@ -363,7 +369,7 @@ body {
   z-index: 15;
 }
 
-.header__wrapper .header__nav li {
+.header__nav li {
   margin: 0 30px;
 }
 
@@ -400,7 +406,7 @@ body {
     color: #ffc28c;
   }
   .nav__links--open {
-    transform: translateY(40px);
+    transform: translateY(165px);
     visibility: visible;
     opacity: 1;
   }
