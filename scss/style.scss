@@ -328,7 +328,8 @@
     width: 70%;
     flex-direction: column;
     gap: 30px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border-radius: 15px;
     max-width: 1000px;
 
@@ -351,6 +352,7 @@
     .message {
       display: flex;
       flex-direction: column;
+
       border: none;
       gap: 50px;
       width: 100%;
@@ -360,6 +362,7 @@
       }
 
       .message__label {
+        justify-self: center;
         padding-bottom: 20px;
         color: $primary-color;
       }
@@ -407,6 +410,7 @@
       display: flex;
       flex-direction: column;
       flex-basis: 100%;
+      align-items: center;
     }
 
     label {

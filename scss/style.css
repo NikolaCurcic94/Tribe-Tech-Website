@@ -822,7 +822,8 @@ footer .footer__icon {
   width: 70%;
   flex-direction: column;
   gap: 30px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
   max-width: 1000px;
 }
@@ -862,6 +863,7 @@ footer .footer__icon {
 }
 
 .stay__in__touch__section form .message .message__label {
+  justify-self: center;
   padding-bottom: 20px;
   color: #090944;
 }
@@ -917,6 +919,7 @@ footer .footer__icon {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  align-items: center;
 }
 
 .stay__in__touch__section form label {
