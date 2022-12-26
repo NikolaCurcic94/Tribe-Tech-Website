@@ -236,7 +236,7 @@ body {
 
 @media (max-width: 480px) {
   .button {
-    font-size: 15px;
+    font-size: 18px;
     width: 140px;
   }
 }
@@ -562,11 +562,17 @@ footer .footer__icon {
   }
 }
 
+@media (max-width: 550px) {
+  .hero__section {
+    background-position: 51% 0%;
+  }
+}
+
 @media (max-width: 450px) {
   .hero__section {
     height: 85vh;
     background-size: 100%;
-    background-position: 47% 23%;
+    background-position: 47% 18%;
     background-size: cover;
   }
 }
