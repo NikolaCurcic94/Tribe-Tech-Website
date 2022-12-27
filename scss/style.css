@@ -727,6 +727,12 @@ main {
   }
 }
 
+@media (max-width: 450px) {
+  .working__process__timeline {
+    gap: 20px;
+  }
+}
+
 .working__process__timeline .circle__wrapper {
   display: flex;
   align-items: center;
@@ -748,8 +754,8 @@ main {
 
 @media (max-width: 450px) {
   .working__process__timeline .circle__wrapper {
-    width: 165px;
-    height: 100px;
+    width: 160px;
+    height: 90px;
   }
 }
 
@@ -774,6 +780,12 @@ main {
 @media (max-width: 768px) {
   .circle {
     height: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .circle {
+    height: 200px;
   }
 }
 
