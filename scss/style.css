@@ -435,6 +435,12 @@ footer {
   background-color: #cc6633;
 }
 
+@media (max-width: 450px) {
+  footer {
+    padding: 6px 0;
+  }
+}
+
 footer p {
   color: #090944;
   font-size: 20px;
@@ -474,6 +480,12 @@ footer ul li {
 footer .footer__icon {
   width: 30px;
   filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
+}
+
+@media (max-width: 450px) {
+  footer .footer__icon {
+    width: 25px;
+  }
 }
 
 /**********************************Section mixins*******************************/

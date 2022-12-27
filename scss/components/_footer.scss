@@ -6,6 +6,10 @@ footer {
   padding: 13px 0;
   background-color: $secondary-color;
 
+  @media (max-width: 450px) {
+    padding: 6px 0;
+  }
+
   p {
     color: $primary-color;
     font-size: 20px;
@@ -44,5 +48,9 @@ footer {
     width: 30px;
     filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg)
       brightness(59%) contrast(124%);
+
+    @media (max-width: 450px) {
+      width: 25px;
+    }
   }
 }
