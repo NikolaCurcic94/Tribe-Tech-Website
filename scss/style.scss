@@ -286,7 +286,7 @@
 .circle:hover {
   transform: scale(1.2);
   cursor: pointer;
-  transform: translateY(-50px);
+  //transform: translateY(-50px);
 }
 .even__circle__wrapper {
   @media (max-width: 1100px) {
