@@ -541,10 +541,6 @@ footer .footer__icon {
 }
 
 /**********************************Hero Section*******************************/
-main {
-  overflow-y: hidden;
-}
-
 .hero__section {
   position: relative;
   overflow: hidden;
@@ -729,7 +725,6 @@ main {
     align-items: center;
     height: auto;
     gap: 90px;
-    width: 500px;
   }
 }
 
