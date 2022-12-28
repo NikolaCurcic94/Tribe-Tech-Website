@@ -79,6 +79,12 @@
   }
 }
 
+.header__nav--inner {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 /******************************************Navigation bar slide*****************************************/
 
 @media (max-width: 768px) {
