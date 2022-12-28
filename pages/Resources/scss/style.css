@@ -417,6 +417,9 @@ body {
     width: 100%;
     z-index: -5;
   }
+  .nav__links--outer .services__link {
+    border-top: 2px solid #ffc28c;
+  }
   .nav__links--outer a {
     font-weight: 700;
     color: #ffc28c;
@@ -438,7 +441,7 @@ body {
 }
 
 .nav__links--outer--open {
-  transform: translateY(132px);
+  transform: translateY(134px);
   visibility: visible;
   opacity: 1;
 }

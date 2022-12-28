@@ -179,6 +179,10 @@
       z-index: -5;
     }
 
+    .services__link {
+      border-top: 2px solid $light-orange-color;
+    }
+
     a {
       font-weight: 700;
       color: $light-orange-color;
@@ -227,9 +231,9 @@
 }
 
 .nav__links--outer--open {
-  -webkit-transform: translateY(132px);
-  -ms-transform: translateY(132px);
-  transform: translateY(132px);
+  -webkit-transform: translateY(134px);
+  -ms-transform: translateY(134px);
+  transform: translateY(134px);
   visibility: visible;
   opacity: 1;
 }
