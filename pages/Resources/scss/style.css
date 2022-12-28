@@ -322,7 +322,6 @@ body {
   overflow: hidden;
   position: sticky;
   top: 0;
-  top: 0;
   z-index: 20;
   background-color: #090944;
 }
@@ -373,9 +372,27 @@ body {
   margin: 0 30px;
 }
 
+@media (max-width: 768px) {
+  .header__nav--inner {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__links--inner {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__link--inner {
+    display: none;
+  }
+}
+
 /******************************************Navigation bar slide*****************************************/
 @media (max-width: 768px) {
-  .nav__links {
+  .nav__links--outer {
     display: flex;
     list-style: none;
     position: fixed;
@@ -389,8 +406,7 @@ body {
     transition: all 0.6s ease-in-out;
     transform: translateY(-185px);
   }
-  .nav__links .nav__link {
-    position: relative;
+  .nav__links--outer .nav__link {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -401,7 +417,7 @@ body {
     width: 100%;
     z-index: -5;
   }
-  .nav__links a {
+  .nav__links--outer a {
     font-weight: 700;
     color: #ffc28c;
   }
