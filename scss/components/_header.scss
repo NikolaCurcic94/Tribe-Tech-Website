@@ -67,6 +67,7 @@
     -ms-flex-align: center;
     align-items: center;
     z-index: 15;
+    position: fixed;
 
     &--outer {
       @media (min-width: 769px) {
@@ -140,7 +141,7 @@
     // }
 
     .nav__link {
-      position: relative;
+      position: fixed;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
