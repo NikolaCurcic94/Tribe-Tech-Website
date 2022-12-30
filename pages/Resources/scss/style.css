@@ -537,19 +537,26 @@ main {
   height: 94vh;
 }
 
-.services-container {
+.resourses-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.services-container .services-box {
-  width: 200px;
-  background-color: #ffc28c;
-  text-align: center;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resourses-container .resourses-box {
+  min-width: 370px;
+  padding: 20px 0;
+  background-color: #ffc28c;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.resourses-container .resourses-box h3,
+.resourses-container .resourses-box a {
+  color: #000066;
 }
 /*# sourceMappingURL=style.css.map */

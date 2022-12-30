@@ -541,20 +541,26 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 80%;
 }
 
 .services-container .services-box {
-  width: 100%;
+  min-width: 300px;
   padding: 20px 0;
   background-color: #ffc28c;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .services-container .services-box h3 {
   color: #000066;
+}
+
+.services-container .services-box:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -43,19 +43,29 @@ main {
   height: 94vh;
 }
 
-.services-container {
+.resourses-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 
-  .services-box {
-    width: 200px;
+  .resourses-box {
+    min-width: 370px;
+    padding: 20px 0;
     background-color: $light-orange-color;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-
+    border-radius: 10px;
     align-items: center;
+
+    h3,
+    a {
+      color: $primary-color;
+    }
+
+    // a {
+    //   color: $primary-color;
+    // }
   }
 }

@@ -47,19 +47,29 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 80%;
+  //width: 80%;
 
   .services-box {
-    width: 100%;
+    // max-width: 450px;
+    min-width: 300px;
     padding: 20px 0;
     background-color: $light-orange-color;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 
     h3 {
       color: $primary-color;
     }
+  }
+
+  .services-box:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }
