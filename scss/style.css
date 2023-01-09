@@ -296,11 +296,17 @@ body {
 .scroll-bar {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 80px;
   width: 100%;
   background-color: #1a086d;
   z-index: 25;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .scroll-bar {
+    top: 60px;
+  }
 }
 
 .scroll-bar-inner {
@@ -381,6 +387,12 @@ body {
 @media (max-width: 768px) {
   .nav__links--inner {
     display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .nav__link--inner {
+    font-size: 17px;
   }
 }
 
@@ -649,6 +661,8 @@ footer .footer__icon {
 .problem__section__wrapper {
   border: 1px solid #303436;
   border-radius: 8px;
+  margin-top: 80px;
+  width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -821,7 +835,6 @@ footer .footer__icon {
 }
 
 .circle:hover {
-  transform: scale(1.2);
   cursor: pointer;
 }
 

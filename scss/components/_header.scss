@@ -93,6 +93,9 @@
 }
 
 .nav__link--inner {
+  @media (max-width: 1080px) {
+    font-size: 17px;
+  }
   @media (max-width: 768px) {
     display: none;
   }

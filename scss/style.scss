@@ -190,6 +190,8 @@
   &__wrapper {
     border: 1px solid rgb(48, 52, 54);
     border-radius: 8px;
+    margin-top: 80px;
+    width: 80%;
 
     @media (max-width: 768px) {
       border: none;
@@ -466,9 +468,9 @@
   }
 }
 .circle:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  // -webkit-transform: scale(1.2);
+  // -ms-transform: scale(1.2);
+  // transform: scale(1.2);
   cursor: pointer;
 }
 .even__circle__wrapper {
