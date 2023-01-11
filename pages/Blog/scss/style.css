@@ -337,7 +337,7 @@ body {
 }
 
 .active-dot--current {
-  display: block;
+  color: aqrgb(37, 153, 153);
 }
 
 /**********************************Sections Animation*******************************/
@@ -367,7 +367,7 @@ body {
 .header__wrapper .tribetech__logo--header {
   width: 180px;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .header__wrapper .tribetech__logo--header {
     width: 130px;
   }
@@ -591,4 +591,34 @@ main {
   justify-content: center;
   align-items: center;
   height: 94vh;
+  background-image: url("../../../img/dots-hero-0110 - rotirani.svg");
+  background-size: 200%;
+  background-position: 8% 10%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+@media (max-width: 1200px) {
+  main {
+    background-size: 300%;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-position: 7% 8%;
+    background-size: 400%;
+  }
+}
+@media (max-width: 550px) {
+  main {
+    background-image: url("../../../img/dots-hero.svg");
+    background-position: 6% 5%;
+    background-size: 100%;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    background-size: 100%;
+    background-position: 6% 23%;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */

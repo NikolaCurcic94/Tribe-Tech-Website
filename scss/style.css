@@ -337,7 +337,7 @@ body {
 }
 
 .active-dot--current {
-  display: block;
+  color: aqrgb(37, 153, 153);
 }
 
 /**********************************Sections Animation*******************************/
@@ -367,7 +367,7 @@ body {
 .header__wrapper .tribetech__logo--header {
   width: 180px;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .header__wrapper .tribetech__logo--header {
     width: 130px;
   }
@@ -672,7 +672,7 @@ footer .footer__icon {
   .hero__section {
     height: 60vh;
     background-image: url("../img/dots-hero.svg");
-    background-position: 47% 5%;
+    background-position: 6% 5%;
     height: 90vh;
     background-size: 100%;
   }
@@ -681,7 +681,7 @@ footer .footer__icon {
   .hero__section {
     height: 85vh;
     background-size: 100%;
-    background-position: 47% 23%;
+    background-position: 6% 23%;
     background-size: cover;
   }
 }

@@ -58,14 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*****************************Active link**********************************/
 
-let curentLocation = location.href;
-let activeLink = document.getElementsByClassName("inner-link");
-let dot = activeLink.nextElementSibling;
-let activeLinkLenght = activeLink.length;
+// let curentLocation = location.href;
+// let activeLink = document.getElementsByClassName("inner-link");
+// let dot = activeLink.nextElementSibling;
+// let activeLinkLenght = activeLink.length;
 
-for (let i = 0; i < activeLinkLenght; i++) {
-  if (activeLink[i].href === curentLocation) {
-    console.log(activeLink[i].dot);
-    activeLink[i].dot.classList = "active-dot--current";
-  }
-}
+// function getDotVisible() {
+//   activeLink.forEach((element) => {
+//     if (element.href === curentLocation) {
+//       activeLink.className = "active-dot--current";
+//     }
+//   });
+// }
+
+// getDotVisible();
+
+// for (let i = 0; i < activeLinkLenght; i++) {
+//   if (activeLink[i].href === curentLocation) {
+//     activeLink[i].className = "active-dot--current";
+//   }
+// }
