@@ -179,14 +179,12 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Sailec";
   src: url("../fonts/Sailec Bold.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
-
 * {
   font-family: "Sailec";
   color: #ffffff;
@@ -218,7 +216,6 @@ body {
     flex-wrap: wrap;
   }
 }
-
 .button {
   padding: 11px;
   border-radius: 5px;
@@ -233,7 +230,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 @media (max-width: 480px) {
   .button {
     font-size: 18px;
@@ -250,7 +246,6 @@ body {
   padding: 8px;
   font-size: 18px;
 }
-
 @media (max-width: 1000px) {
   .nav__button {
     display: none;
@@ -263,7 +258,6 @@ body {
   width: 39px;
   filter: invert(86%) sepia(10%) saturate(2382%) hue-rotate(320deg) brightness(102%) contrast(101%);
 }
-
 @media (max-width: 768px) {
   .menu__button {
     display: block;
@@ -287,7 +281,6 @@ body {
   font-size: 25px;
   font-weight: 900;
 }
-
 @media (max-width: 480px) {
   .call__us__button {
     font-size: 18px;
@@ -297,14 +290,12 @@ body {
 .form__button {
   width: 230px;
 }
-
 @media (max-width: 550px) {
   .form__button {
     width: 190px;
     font-size: 18px;
   }
 }
-
 @media (max-width: 450px) {
   .form__button {
     width: 165px;
@@ -323,7 +314,6 @@ body {
   z-index: 25;
   overflow: hidden;
 }
-
 @media (max-width: 768px) {
   .scroll-bar {
     top: 60px;
@@ -357,30 +347,26 @@ body {
   align-items: center;
   width: 100vw;
   padding: 20px 0;
-  border-bottom: 1px solid #303436;
+  border-bottom: 1px solid rgb(48, 52, 54);
   overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 20;
   background-color: #090944;
 }
-
 @media (max-width: 768px) {
   .header {
     padding: 10px 0;
   }
 }
-
 .header__wrapper {
   justify-content: space-between;
   align-items: center;
   height: 43px;
 }
-
 .header__wrapper .tribetech__logo--header {
   width: 180px;
 }
-
 @media (max-width: 768px) {
   .header__wrapper .tribetech__logo--header {
     width: 130px;
@@ -394,22 +380,25 @@ body {
   display: flex;
   align-items: center;
 }
-
 .header__nav .nav__links {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 15;
 }
-
 @media (min-width: 769px) {
   .header__nav .nav__links--outer {
     display: none;
   }
 }
-
 .header__nav li {
   margin: 0 30px;
 }
@@ -433,13 +422,11 @@ body {
   align-items: center;
   gap: 5px;
 }
-
 @media (max-width: 1080px) {
   .nav__link--inner {
     font-size: 17px;
   }
 }
-
 @media (max-width: 768px) {
   .nav__link--inner {
     display: none;
@@ -449,24 +436,45 @@ body {
 /******************************************Navigation bar slide*****************************************/
 @media (max-width: 768px) {
   .nav__links--outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     position: fixed;
     left: 0;
     width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: large;
     z-index: 15;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
+    -webkit-transform: translateY(-185px);
+    -ms-transform: translateY(-185px);
     transform: translateY(-185px);
   }
   .nav__links--outer .nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-transition-delay: calc(0.2s * var(--i));
+    -o-transition-delay: calc(0.2s * var(--i));
     transition-delay: calc(0.2s * var(--i));
     border-bottom: 2px solid #ffc28c;
     background-color: #1a086d;
@@ -485,18 +493,21 @@ body {
     cursor: pointer;
   }
 }
-
 .invisible {
   display: none;
 }
 
 .visible {
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
   transform: translateY(-40px);
   visibility: visible;
   opacity: 1;
 }
 
 .nav__links--outer--open {
+  -webkit-transform: translateY(134px);
+  -ms-transform: translateY(134px);
   transform: translateY(134px);
   visibility: visible;
   opacity: 1;
@@ -509,54 +520,45 @@ footer {
   padding: 13px 0;
   background-color: #cc6633;
 }
-
 @media (max-width: 450px) {
   footer {
     padding: 6px 0;
   }
 }
-
 footer p {
   color: #090944;
   font-size: 20px;
   font-weight: 800;
 }
-
 footer .footer__nav {
   width: 100%;
   display: flex;
   gap: 20px;
   justify-content: space-between;
 }
-
 @media (max-width: 768px) {
   footer .footer__nav {
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 768px) {
   footer .footer__nav .footer__list {
     display: none;
   }
 }
-
 footer ul {
   display: flex;
   gap: 20px;
 }
-
 footer ul li {
   color: #090944;
   font-weight: 900;
   font-size: 20px;
 }
-
 footer .footer__icon {
   width: 30px;
   filter: invert(10%) sepia(53%) saturate(7434%) hue-rotate(243deg) brightness(59%) contrast(124%);
 }
-
 @media (max-width: 450px) {
   footer .footer__icon {
     width: 25px;
@@ -569,14 +571,12 @@ footer .footer__icon {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Sailec";
   src: url("../../../fonts/Sailec Bold.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
-
 * {
   font-family: "Sailec";
   color: #ffffff;
@@ -602,7 +602,6 @@ main {
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .services-container .services-box {
   min-width: 300px;
   padding: 20px 0;
@@ -610,13 +609,12 @@ main {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
-
 .services-container .services-box h3 {
   color: #000066;
 }
-
 .services-container .services-box:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
   cursor: pointer;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

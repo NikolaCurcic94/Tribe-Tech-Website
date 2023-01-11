@@ -179,14 +179,12 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Sailec";
   src: url("../fonts/Sailec Bold.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
-
 * {
   font-family: "Sailec";
   color: #ffffff;
@@ -208,14 +206,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Sailec";
   src: url("../fonts/Sailec Bold.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
-
 * {
   font-family: "Sailec", sans-serif;
   color: #000066;
@@ -240,17 +236,14 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-
 .thank__you__modal h1 {
   font-size: 40px;
   font-weight: 900;
 }
-
 .thank__you__modal p {
   font-size: 20px;
   font-weight: 600;
 }
-
 .thank__you__modal a {
   width: 300px;
   padding: 10px;
@@ -260,5 +253,4 @@ body {
   border: none;
   font-size: 20px;
   font-weight: 900;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
