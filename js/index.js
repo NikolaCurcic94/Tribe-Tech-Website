@@ -55,3 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.classList.remove("invisible");
   });
 });
+
+/*****************************Active link**********************************/
+
+let curentLocation = location.href;
+let activeLink = document.querySelectorAll(".inner-link");
+let activeLinkLenght = activeLink.length;
+
+for (let i = 0; i < activeLinkLenght; i++) {
+  if (activeLink[i].href === curentLocation) {
+    console.log(activeLink[i].nextElementSibling);
+    activeLink[i].nextElementSibling.className = "active-dot--current";
+  }
+}

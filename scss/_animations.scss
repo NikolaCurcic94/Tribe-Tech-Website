@@ -22,4 +22,16 @@
   color: transparent;
 }
 
+.active-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  display: none;
+}
+
+.active-dot--current {
+  display: block;
+}
+
 /**********************************Sections Animation*******************************/
