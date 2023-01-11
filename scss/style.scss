@@ -187,6 +187,10 @@
 
   .tribetech__logo--hero {
     width: 500px;
+
+    @media (max-width: 1000px) {
+      width: 400px;
+    }
     @media (max-width: 768px) {
       width: 80%;
     }

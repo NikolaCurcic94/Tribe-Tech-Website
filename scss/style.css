@@ -699,6 +699,11 @@ footer .footer__icon {
 .hero__section .tribetech__logo--hero {
   width: 500px;
 }
+@media (max-width: 1000px) {
+  .hero__section .tribetech__logo--hero {
+    width: 400px;
+  }
+}
 @media (max-width: 768px) {
   .hero__section .tribetech__logo--hero {
     width: 80%;
