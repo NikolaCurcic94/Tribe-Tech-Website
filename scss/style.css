@@ -339,6 +339,7 @@ body {
 .active-dot--current {
   display: block;
   color: aqrgb(37, 153, 153);
+  display: block;
 }
 
 /**********************************Sections Animation*******************************/
