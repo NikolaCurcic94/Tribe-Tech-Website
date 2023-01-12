@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     progressBarInner.style.width = percent + "%";
     progressBarInner.innerHTML = roundedPercent + "%";
   });
+
+  getDotVisible();
 });
 
 /*****************************Menu button**********************************/
@@ -58,23 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*****************************Active link**********************************/
 
-// let curentLocation = location.href;
-// let activeLink = document.getElementsByClassName("inner-link");
-// let dot = activeLink.nextElementSibling;
-// let activeLinkLenght = activeLink.length;
+function getDotVisible() {
+  let curentLocation = location.href;
+  let activeLinks = document.getElementsByClassName("inner-link");
 
-// function getDotVisible() {
-//   activeLink.forEach((element) => {
-//     if (element.href === curentLocation) {
-//       activeLink.className = "active-dot--current";
-//     }
-//   });
-// }
+  for (let i = 0; i < activeLinks.length; i++) {
+    if (activeLinks[i].href === curentLocation) {
+      activeLinks[i].nextElementSibling.className = "active-dot active-dot--current";
+    }
+  }
+}
 
-// getDotVisible();
-
-// for (let i = 0; i < activeLinkLenght; i++) {
-//   if (activeLink[i].href === curentLocation) {
-//     activeLink[i].className = "active-dot--current";
-//   }
-// }
